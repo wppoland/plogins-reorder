@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Reorder – Admin UI
+   Polishes the Settings screen: tidy sections, inline help tooltips, clear
+   choice groups. Themeable, dark-mode aware, motion-safe. Scoped to
+   .reorder-admin so it never leaks into the rest of wp-admin.
+   ========================================================================== */
+
+.reorder-admin {
+    --reorder-accent: #2271b1;
+    --reorder-card-border: #dcdfe4;
+    --reorder-muted: #646970;
+    --reorder-tip-bg: #1e1e1e;
+    --reorder-tip-text: #fff;
+
+    max-inline-size: 60rem;
+}
+
+/* ── Intro / header ───────────────────────────────────────────────────── */
+
+.reorder-admin__lead {
+    margin-block: 0.25em 1.25em;
+    max-inline-size: 60ch;
+    color: var(--reorder-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ── Sections ─────────────────────────────────────────────────────────── */
+
+.reorder-admin .form-table {
+    margin-block-start: 0.5em;
+}
+
+.reorder-admin h2 {
+    margin-block-start: 1.75em;
+    padding-block-end: 0.4em;
+    border-block-end: 1px solid var(--reorder-card-border);
+    font-size: 1.05rem;
+}
+
+.reorder-admin .form-table th {
+    inline-size: 16rem;
+    padding-block: 18px;
+}
+
+/* ── Choice groups (radios / checkboxes) ──────────────────────────────── */
+
+.reorder-choice {
+    display: block;
+    margin-block-end: 0.4em;
+    line-height: 1.6;
+}
+
+.reorder-choice:last-of-type {
+    margin-block-end: 0;
+}
+
+/* ── Inline help tooltip ("?" affordance) ─────────────────────────────── */
+
+.reorder-help {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 1.15rem;
+    block-size: 1.15rem;
+    margin-inline-start: 0.4rem;
+    padding: 0;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--reorder-accent);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: help;
+    vertical-align: middle;
+}
+
+.reorder-help:focus-visible {
+    outline: 2px solid var(--reorder-accent);
+    outline-offset: 2px;
+}
+
+.reorder-help__bubble {
+    position: absolute;
+    inset-block-end: calc(100% + 8px);
+    inset-inline-start: 50%;
+    z-index: 20;
+    inline-size: max-content;
+    max-inline-size: 18rem;
+    transform: translateX(-50%);
+    padding: 0.55rem 0.7rem;
+    border-radius: 6px;
+    background: var(--reorder-tip-bg);
+    color: var(--reorder-tip-text);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: start;
+    white-space: normal;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.reorder-help__bubble::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 100%;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-block-start-color: var(--reorder-tip-bg);
+}
+
+.reorder-help:hover .reorder-help__bubble,
+.reorder-help:focus-visible .reorder-help__bubble,
+.reorder-help[aria-expanded="true"] .reorder-help__bubble {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ── Motion ───────────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: no-preference) {
+    .reorder-help__bubble {
+        transition: opacity 0.14s ease, visibility 0.14s ease;
+    }
+}
+
+/* ── Dark mode ────────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+    .reorder-admin {
+        --reorder-card-border: #3c434a;
+        --reorder-muted: #a7aaad;
+        --reorder-tip-bg: #e2e4e7;
+        --reorder-tip-text: #1d2327;
+    }
+}
