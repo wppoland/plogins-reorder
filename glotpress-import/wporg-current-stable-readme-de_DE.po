@@ -1,0 +1,79 @@
+# wp.org Stable Readme translation (de_DE)
+msgid ""
+msgstr ""
+"Project-Id-Version: reorder Stable Readme\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Erfordert Plugins: woocommerce"
+
+msgid "Adds an \"Order again\" button to past WooCommerce orders. One click re-adds the still-available items to the cart and sends the customer onward."
+msgstr "Fügt früheren WooCommerce-Bestellungen eine Schaltfläche „Erneut bestellen“ hinzu. Ein Klick genügt, um die noch verfügbaren Artikel wieder in den Warenkorb zu legen und den Kunden weiterzuleiten."
+
+msgid "Reorder adds an <strong>\"Order again\"</strong> button to each past order in WooCommerce <strong>My Account → Orders</strong>. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings."
+msgstr "„Neu bestellen“ fügt jeder vergangenen Bestellung in WooCommerce <strong>Mein Konto → Bestellungen</strong> die Schaltfläche <strong>„Erneut bestellen“</strong> hinzu. Wenn ein Kunde darauf klickt, wird jeder noch kaufbare Artikel aus dieser Bestellung zurück in den Warenkorb gelegt und er landet auf der Warenkorbseite oder der Kasse, je nachdem, was du in den Einstellungen ausgewählt haben."
+
+msgid "Items that are gone (deleted, hidden, or out of stock) are left out, and the customer sees a notice naming what couldn't be added so there are no silent surprises in the cart."
+msgstr "Artikel, die nicht mehr verfügbar sind (gelöscht, ausgeblendet oder nicht mehr vorrätig), werden weggelassen, und der Kunde sieht einen Hinweis mit dem Namen, was nicht hinzugefügt werden konnte, sodass es im Warenkorb keine stillen Überraschungen gibt."
+
+msgid "What the plugin does:"
+msgstr "Was das Plugin macht:"
+
+msgid "* Re-adds a whole order's worth of products in one click, instead of the customer searching for each item again.\n* Keeps the original variation: if they bought the medium in blue, that's the variation that comes back.\n* Checks the nonce on every reorder link and confirms the logged-in customer owns the order before touching the cart, so one customer can't reorder another's order.\n* Skips unavailable products with a notice rather than leaving the customer with a broken or half-filled cart.\n* Adds no front-end JavaScript and no extra markup. The button is a normal WooCommerce order action with a small, themeable stylesheet (loaded only on the orders page), so it stands out without shifting your account-page layout."
+msgstr "* Fügt die Produkte einer gesamten Bestellung mit einem Klick erneut hinzu, anstatt dass der Kunde erneut nach jedem Artikel suchen muss.\n* Behält die ursprüngliche Variante bei: Wenn sie das Medium in Blau gekauft haben, ist es die Variante, die zurückkommt.\n* Überprüft die Nonce auf jedem Nachbestellungslink und bestätigt, dass der angemeldete Kunde der Eigentümer der Bestellung ist, bevor er den Warenkorb berührt, sodass ein Kunde die Bestellung eines anderen nicht erneut bestellen kann.\n* Überspringt nicht verfügbare Produkte mit einer Benachrichtigung, anstatt den Kunden mit einem kaputten oder halbvollen Warenkorb zurückzulassen.\n* Fügt kein Front-End-JavaScript und kein zusätzliches Markup hinzu. Die Schaltfläche ist eine normale WooCommerce-Bestellaktion mit einem kleinen, thematisch anpassbaren Stylesheet (das nur auf der Bestellseite geladen wird), sodass sie hervorsticht, ohne das Layout deiner Kontoseite zu verändern."
+
+msgid "Settings live under <strong>WooCommerce → Reorder</strong>: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout."
+msgstr "Die Einstellungen findest du unter <strong>WooCommerce → Nachbestellen</strong>: Ändere die Beschriftung der Schaltfläche, wähle aus, welche Bestellstatus die Schaltfläche erhalten (Abgeschlossen, In Bearbeitung, Angehalten) und entscheide, ob die Nachbestellung im Warenkorb oder an der Kasse landet."
+
+msgid "Source and bug reports live on GitHub at https://github.com/wppoland/plogins-reorder; issues and patches welcome."
+msgstr "Quell- und Fehlerberichte live auf GitHub unter https://github.com/wppoland/plogins-reorder; Probleme und Patches willkommen."
+
+msgid "1. Install and activate WooCommerce (8.0 or later).\n2. Install Reorder from the WordPress plugin directory, or upload the `reorder` folder to `/wp-content/plugins/`.\n3. Activate the plugin through the <strong>Plugins<strong> screen. 4. Optionally visit </strong>WooCommerce → Reorder<strong> to set the button text, statuses, and redirect; sensible defaults work out of the box. 5. An \"Order again\" button now appears on qualifying past orders in </strong>My Account → Orders</strong>."
+msgstr "1. Installieren und aktiviere WooCommerce (8.0 oder höher).\n2. Installiere Reorder aus dem WordPress-Plugin-Verzeichnis oder lade den Ordner „reorder“ nach „/wp-content/plugins/“ hoch.\n3. Aktiviere das Plugin über den Bildschirm <strong>Plugins<strong>. 4. Besuche optional </strong>WooCommerce → Neu anordnen<strong>, um den Schaltflächentext, den Status und die Weiterleitung festzulegen. Sinnvolle Standardeinstellungen funktionieren sofort. 5. Die Schaltfläche „Erneut bestellen“ wird jetzt bei qualifizierten früheren Bestellungen unter </strong>Mein Konto → Bestellungen</strong> angezeigt."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-reorder/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-reorder/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-reorder\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-reorder/issues"
+msgstr "* <strong>Dokumentation</strong> - https://plogins.com/de/plogins-reorder/docs/\n* <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-reorder/\n* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-reorder\n* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-reorder/issues"
+
+msgid "Yes. Reorder is free and licensed under the GPL."
+msgstr "Ja. Die Nachbestellung ist kostenlos und unter der GPL lizenziert."
+
+msgid "Yes. Reorder is a WooCommerce extension and requires WooCommerce 8.0 or later. It shows an admin notice and stays inactive if WooCommerce is missing or out of date."
+msgstr "Ja. Reorder ist eine WooCommerce-Erweiterung und erfordert WooCommerce 8.0 oder höher. Es zeigt einen Administratorhinweis an und bleibt inaktiv, wenn WooCommerce fehlt oder veraltet ist."
+
+msgid "They are skipped, and the customer sees a notice naming the products that could not be re-added. Everything still purchasable is added to the cart."
+msgstr "Du wirst übersprungen und der Kunde sieht einen Hinweis mit den Namen der Produkte, die nicht erneut hinzugefügt werden konnten. Alles, was noch zu kaufen ist, wird in den Warenkorb gelegt."
+
+msgid "By default, completed orders. You can enable Processing and On hold too under <strong>WooCommerce → Reorder</strong>. The button only shows to the customer who owns the order."
+msgstr "Standardmäßig abgeschlossene Bestellungen. Du kannst „Verarbeitung“ und „Angehalten“ auch unter <strong>WooCommerce → Nachbestellen</strong> aktivieren. Die Schaltfläche wird nur dem Kunden angezeigt, dem die Bestellung gehört."
+
+msgid "Yes. The original variation (e.g. size and colour) is preserved, so the correct variation is added back to the cart."
+msgstr "Ja. Die ursprüngliche Variante (z. B. Größe und Farbe) bleibt erhalten, sodass die richtige Variante wieder in den Warenkorb gelegt wird."
+
+msgid "To the cart by default, or straight to checkout, your choice in the settings."
+msgstr "Standardmäßig zum Warenkorb oder direkt zur Kasse, je nach Wahl in den Einstellungen."
+
+msgid "Deleting the plugin from the <strong>Plugins</strong> screen runs the uninstall routine, which removes the `reorder_settings` and `reorder_db_version` options. Reorder stores no custom tables."
+msgstr "Wenn du das Plugin aus dem Bildschirm <strong>Plugins</strong> löschen, wird die Deinstallationsroutine ausgeführt, die die Optionen „reorder_settings“ und „reorder_db_version“ entfernt. Reorder speichert keine benutzerdefinierten Tabellen."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten."
+
+msgid "Reorder does not connect to any external services. It only re-adds items to the standard WooCommerce cart on your own site."
+msgstr "Reorder stellt keine Verbindung zu externen Diensten her. Es werden lediglich Artikel wieder zum Standard-WooCommerce-Warenkorb auf deiner eigenen Website hinzugefügt."
+
+msgid "1. The \"Order again\" button on the My Account orders list.\n2. Settings page: button text, order statuses, and redirect target."
+msgstr "1. Die Schaltfläche „Erneut bestellen“ in der Bestellliste „Mein Konto“.\n2. Einstellungsseite: Schaltflächentext, Bestellstatus und Weiterleitungsziel."
+
+msgid "* First stable release."
+msgstr "* Erste stabile Version."
+
+msgid "* Renamed to Plogins Reorder for WooCommerce for a more distinctive plugin name."
+msgstr "* Für einen eindeutigeren Plugin-Namen in Plogins Reorder for WooCommerce umbenannt."
+
+msgid "* Initial release: one-click reorder button on past orders, ownership-checked and nonce-protected, with configurable label, statuses, and redirect target."
+msgstr "* Erstveröffentlichung: Ein-Klick-Nachbestellungsschaltfläche für frühere Bestellungen, Eigentumsüberprüfung und Nonce-Schutz, mit konfigurierbarer Beschriftung, Status und Weiterleitungsziel."
+

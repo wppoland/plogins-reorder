@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,7 +82,14 @@ Reorder does not connect to any external services. It only re-adds items to the 
 1. The "Order again" button on the My Account orders list.
 2. Settings page: button text, order statuses, and redirect target.
 
+== Translations ==
+
+Plogins Reorder includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-reorder`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
 
 = 1.0.1 =
 * First stable release.
