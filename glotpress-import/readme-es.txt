@@ -4,72 +4,74 @@ Tags: woocommerce, reorder, buy again, repeat order, order again
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Requiere complementos: woocommerce
-Stable tag: 1.0.1
+Requires Plugins: woocommerce
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Añade un botón "Ordenar nuevamente" a pedidos anteriores de WooCommerce. Un clic vuelve a añadir los artículos que aún están disponibles al carrito y envía al cliente hacia adelante.
+Añade un botón «Pedir de nuevo» a pedidos anteriores de WooCommerce. Un clic vuelve a añadir los artículos aún disponibles al carrito y envía al cliente adelante.
 
 == Description ==
 
-Reordenar añade un botón <strong>"Pedir de nuevo"</strong> a cada pedido anterior en WooCommerce <strong>Mi cuenta → Pedidos</strong>. Cuando un cliente hace clic en él, todos los artículos que aún se pueden comprar de ese pedido regresan al carrito y llegan a la página del carrito o al pago, lo que haya elegido en la configuración.
+Reorder añade un botón <strong>«Pedir de nuevo»</strong> a cada pedido anterior en WooCommerce <strong>Mi cuenta → Pedidos</strong>. Cuando un cliente hace clic, cada artículo que aún se puede comprar de ese pedido vuelve al carrito y llega a la página del carrito o al pago, según lo que hayas elegido en los ajustes.
 
-Los artículos que ya no están (eliminados, ocultos o agotados) quedan fuera y el cliente ve un aviso que indica lo que no se pudo añadir para que no haya sorpresas silenciosas en el carrito.
+Los artículos que ya no están (eliminados, ocultos o agotados) se omiten y el cliente ve un aviso con los productos que no se pudieron añadir, para que no haya sorpresas silenciosas en el carrito.
 
-Qué hace el complemento:
+Qué hace el plugin:
 
-* Vuelve a añadir los productos de un pedido completo con un solo clic, en lugar de que el cliente vuelva a buscar cada artículo.
-* Mantiene la variación original: si compraron el mediano en azul, esa es la variación que regresa.
-* Verifica el nonce en cada enlace de reorden y confirma que el cliente que inició sesión es el propietario del pedido antes de tocar el carrito, por lo que un cliente no puede reordenar el pedido de otro.
-* Omite productos no disponibles con un aviso en lugar de dejar al cliente con un carrito roto o medio lleno.
-* No añade JavaScript de interfaz ni marcas adicionales. El botón es una acción de pedido normal de WooCommerce con una pequeña hoja de estilo temática (cargada solo en la página de pedidos), por lo que se destaca sin cambiar el diseño de la página de su cuenta.
+* Vuelve a añadir los productos de un pedido completo con un solo clic, en lugar de que el cliente busque cada artículo de nuevo.
+* Mantiene la variación original: si compraron la talla M en azul, vuelve esa variación.
+* Verifica el nonce en cada enlace de repetición de pedido y confirma que el cliente con sesión iniciada es el propietario del pedido antes de tocar el carrito, así un cliente no puede repetir el pedido de otro.
+* Omite productos no disponibles con un aviso en lugar de dejar al cliente con un carrito roto o a medias.
+* No añade JavaScript de interfaz ni marcado extra. El botón es una acción de pedido normal de WooCommerce con una hoja de estilos pequeña y temática (cargada solo en la página de pedidos), así destaca sin cambiar el diseño de tu página de cuenta.
 
-La configuración se encuentra en <strong>WooCommerce → Reordenar</strong>: cambie la etiqueta del botón, elija qué estados de pedido obtienen el botón (Completado, Procesando, En espera) y decida si el reordenamiento llega al carrito o al finalizar la compra.
+Los ajustes están en <strong>WooCommerce → Reorder</strong>: cambia la etiqueta del botón, elige qué estados de pedido muestran el botón (Completado, En proceso, En espera) y decide si la repetición del pedido va al carrito o al pago.
 
-Los informes de fuentes y errores se encuentran disponibles en GitHub en https://github.com/wppoland/plogins-reorder; Se aceptan problemas y parches.
+Código fuente e informes de errores en GitHub: https://github.com/wppoland/plogins-reorder — incidencias y parches bienvenidos.
 
 == Installation ==
 
-1. Instale y active WooCommerce (8.0 o posterior).
-2. Instale Reorder desde el directorio de complementos de WordPress o cargue la carpeta `reorder` en `/wp-content/plugins/`.
-3. Active el complemento a través de la pantalla <strong>Complementos<strong>. 4. Opcionalmente, visite </strong>WooCommerce → Reordenar<strong> para configurar el texto del botón, los estados y la redirección; Los valores predeterminados sensatos funcionan de inmediato. 5. Ahora aparece un botón "Volver a realizar el pedido" en los pedidos anteriores que califican en </strong>Mi cuenta → Pedidos</strong>.
+1. Instala y activa WooCommerce (8.0 o posterior).
+2. Instala Reorder desde el directorio de plugins de WordPress o sube la carpeta `reorder` a `/wp-content/plugins/`.
+3. Activa el plugin en la pantalla <strong>Plugins</strong>.
+4. Opcionalmente entra en <strong>WooCommerce → Reorder</strong> para configurar el texto del botón, los estados y la redirección; los valores predeterminados sensatos funcionan de inmediato.
+5. El botón «Pedir de nuevo» aparece ahora en pedidos anteriores que cumplan los requisitos en <strong>Mi cuenta → Pedidos</strong>.
 
 == Frequently Asked Questions ==
 
 = Documentation and links =
 
 * <strong>Documentación</strong> - https://plogins.com/es/plogins-reorder/docs/
-* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-reorder/
+* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-reorder/
 * <strong>Código fuente</strong> - https://github.com/wppoland/plogins-reorder
-* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-reorder/issues
+* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-reorder/issues
 
 
 = Is Reorder free? =
-Sí. Reordenar es gratuito y tiene licencia GPL.
+Sí. Reorder es gratuito y tiene licencia GPL.
 
 = Does Reorder require WooCommerce? =
-Sí. Reorder es una extensión de WooCommerce y requiere WooCommerce 8.0 o posterior. Muestra un aviso de administrador y permanece inactivo si WooCommerce falta o está desactualizado.
+Sí. Reorder es una extensión de WooCommerce y requiere WooCommerce 8.0 o posterior. Muestra un aviso de administración y permanece inactivo si falta WooCommerce o está desactualizado.
 
 = What happens to items that are no longer available? =
-Se omiten y el cliente ve un aviso que nombra los productos que no se pudieron volver a añadir. Todo lo que aún se puede comprar se añade al carrito.
+Se omiten y el cliente ve un aviso con los productos que no se pudieron volver a añadir. Todo lo que aún se puede comprar se añade al carrito.
 
 = Which orders show the button? =
-Por defecto, pedidos completados. También puedes habilitar Procesamiento y En espera en <strong>WooCommerce → Reordenar</strong>. El botón solo se muestra al cliente propietario del pedido.
+Por defecto, pedidos completados. También puedes activar En proceso y En espera en <strong>WooCommerce → Reorder</strong>. El botón solo lo ve el cliente propietario del pedido.
 
 = Does it work with product variations? =
-Sí. La variación original (por ejemplo, tamaño y color) se conserva, por lo que la variación correcta se vuelve a añadir al carrito.
+Sí. Se conserva la variación original (p. ej. talla y color), así que vuelve la variación correcta al carrito.
 
 = Where does the customer go after reordering? =
-Al carrito por defecto, o directamente al pago, tu elección en la configuración.
+Al carrito por defecto o directamente al pago, según elijas en los ajustes.
 
 = How do I remove all plugin data? =
-Al eliminar el complemento de la pantalla <strong>Complementos</strong> se ejecuta la rutina de desinstalación, que elimina las opciones `reorder_settings` y `reorder_db_version`. Reordenar tiendas sin tablas personalizadas.
+Al borrar el plugin desde la pantalla <strong>Plugins</strong> se ejecuta la rutina de desinstalación, que elimina las opciones `reorder_settings` y `reorder_db_version`. Reorder no crea tablas personalizadas.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos.
+Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos.
 
 == External Services ==
 
@@ -77,16 +79,23 @@ Reorder no se conecta a ningún servicio externo. Solo vuelve a añadir artícul
 
 == Screenshots ==
 
-1. El botón "Ordenar nuevamente" en la lista de pedidos de Mi Cuenta.
-2. Página de configuración: texto del botón, estados de pedidos y destino de redireccionamiento.
+1. El botón «Pedir de nuevo» en la lista de pedidos de Mi cuenta.
+2. Página de ajustes: texto del botón, estados de pedido y destino de redirección.
+
+== Translations ==
+
+Plogins Reorder incluye traducciones al polaco, al alemán y al español para la interfaz del plugin. El dominio de texto es `plogins-reorder`, por lo que los paquetes de idioma de WordPress.org también pueden sobrescribir o ampliar estas traducciones incluidas.
 
 == Changelog ==
+
+= 1.0.2 =
+* Se añadieron traducciones incluidas al polaco, al alemán y al español para la interfaz del plugin.
 
 = 1.0.1 =
 * Primera versión estable.
 
 = 0.1.1 =
-* Renombrado a Plogins Reorder for WooCommerce para obtener un nombre de complemento más distintivo.
+* Renombrado a Plogins Reorder para WooCommerce para conseguir un nombre de plugin más distintivo.
 
 = 0.1.0 =
-* Lanzamiento inicial: botón para reordenar con un solo clic en pedidos anteriores, con propiedad verificada y no protegida, con etiqueta configurable, estados y destino de redireccionamiento.
+* Versión inicial: botón de repetición de pedido con un clic en pedidos anteriores, con comprobación de propiedad y protección nonce, con etiqueta, estados y destino de redirección configurables.

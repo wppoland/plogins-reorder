@@ -8,72 +8,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
-msgid "Requires Plugins: woocommerce"
-msgstr "Requiere complementos: woocommerce"
-
 msgid "Adds an \"Order again\" button to past WooCommerce orders. One click re-adds the still-available items to the cart and sends the customer onward."
-msgstr "Añade un botón \"Ordenar nuevamente\" a pedidos anteriores de WooCommerce. Un clic vuelve a añadir los artículos que aún están disponibles al carrito y envía al cliente hacia adelante."
+msgstr "Añade un botón «Pedir de nuevo» a pedidos anteriores de WooCommerce. Un clic vuelve a añadir los artículos aún disponibles al carrito y envía al cliente adelante."
 
 msgid "Reorder adds an <strong>\"Order again\"</strong> button to each past order in WooCommerce <strong>My Account → Orders</strong>. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings."
-msgstr "Reordenar añade un botón <strong>\"Pedir de nuevo\"</strong> a cada pedido anterior en WooCommerce <strong>Mi cuenta → Pedidos</strong>. Cuando un cliente hace clic en él, todos los artículos que aún se pueden comprar de ese pedido regresan al carrito y llegan a la página del carrito o al pago, lo que haya elegido en la configuración."
+msgstr "Reorder añade un botón <strong>«Pedir de nuevo»</strong> a cada pedido anterior en WooCommerce <strong>Mi cuenta → Pedidos</strong>. Cuando un cliente hace clic, cada artículo que aún se puede comprar de ese pedido vuelve al carrito y llega a la página del carrito o al pago, según lo que hayas elegido en los ajustes."
 
 msgid "Items that are gone (deleted, hidden, or out of stock) are left out, and the customer sees a notice naming what couldn't be added so there are no silent surprises in the cart."
-msgstr "Los artículos que ya no están (eliminados, ocultos o agotados) quedan fuera y el cliente ve un aviso que indica lo que no se pudo añadir para que no haya sorpresas silenciosas en el carrito."
+msgstr "Los artículos que ya no están (eliminados, ocultos o agotados) se omiten y el cliente ve un aviso con los productos que no se pudieron añadir, para que no haya sorpresas silenciosas en el carrito."
 
 msgid "What the plugin does:"
-msgstr "Qué hace el complemento:"
+msgstr "Qué hace el plugin:"
 
 msgid "* Re-adds a whole order's worth of products in one click, instead of the customer searching for each item again.\n* Keeps the original variation: if they bought the medium in blue, that's the variation that comes back.\n* Checks the nonce on every reorder link and confirms the logged-in customer owns the order before touching the cart, so one customer can't reorder another's order.\n* Skips unavailable products with a notice rather than leaving the customer with a broken or half-filled cart.\n* Adds no front-end JavaScript and no extra markup. The button is a normal WooCommerce order action with a small, themeable stylesheet (loaded only on the orders page), so it stands out without shifting your account-page layout."
-msgstr "* Vuelve a añadir los productos de un pedido completo con un solo clic, en lugar de que el cliente vuelva a buscar cada artículo.\n* Mantiene la variación original: si compraron el mediano en azul, esa es la variación que regresa.\n* Verifica el nonce en cada enlace de reorden y confirma que el cliente que inició sesión es el propietario del pedido antes de tocar el carrito, por lo que un cliente no puede reordenar el pedido de otro.\n* Omite productos no disponibles con un aviso en lugar de dejar al cliente con un carrito roto o medio lleno.\n* No añade JavaScript de interfaz ni marcas adicionales. El botón es una acción de pedido normal de WooCommerce con una pequeña hoja de estilo temática (cargada solo en la página de pedidos), por lo que se destaca sin cambiar el diseño de la página de su cuenta."
+msgstr "* Vuelve a añadir los productos de un pedido completo con un solo clic, en lugar de que el cliente busque cada artículo de nuevo.\n* Mantiene la variación original: si compraron la talla M en azul, vuelve esa variación.\n* Verifica el nonce en cada enlace de repetición de pedido y confirma que el cliente con sesión iniciada es el propietario del pedido antes de tocar el carrito, así un cliente no puede repetir el pedido de otro.\n* Omite productos no disponibles con un aviso en lugar de dejar al cliente con un carrito roto o a medias.\n* No añade JavaScript de interfaz ni marcado extra. El botón es una acción de pedido normal de WooCommerce con una hoja de estilos pequeña y temática (cargada solo en la página de pedidos), así destaca sin cambiar el diseño de tu página de cuenta."
 
 msgid "Settings live under <strong>WooCommerce → Reorder</strong>: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout."
-msgstr "La configuración se encuentra en <strong>WooCommerce → Reordenar</strong>: cambie la etiqueta del botón, elija qué estados de pedido obtienen el botón (Completado, Procesando, En espera) y decida si el reordenamiento llega al carrito o al finalizar la compra."
+msgstr "Los ajustes están en <strong>WooCommerce → Reorder</strong>: cambia la etiqueta del botón, elige qué estados de pedido muestran el botón (Completado, En proceso, En espera) y decide si la repetición del pedido va al carrito o al pago."
 
 msgid "Source and bug reports live on GitHub at https://github.com/wppoland/plogins-reorder; issues and patches welcome."
-msgstr "Los informes de fuentes y errores se encuentran disponibles en GitHub en https://github.com/wppoland/plogins-reorder; Se aceptan problemas y parches."
+msgstr "Código fuente e informes de errores en GitHub: https://github.com/wppoland/plogins-reorder — incidencias y parches bienvenidos."
 
 msgid "1. Install and activate WooCommerce (8.0 or later).\n2. Install Reorder from the WordPress plugin directory, or upload the `reorder` folder to `/wp-content/plugins/`.\n3. Activate the plugin through the <strong>Plugins<strong> screen. 4. Optionally visit </strong>WooCommerce → Reorder<strong> to set the button text, statuses, and redirect; sensible defaults work out of the box. 5. An \"Order again\" button now appears on qualifying past orders in </strong>My Account → Orders</strong>."
-msgstr "1. Instale y active WooCommerce (8.0 o posterior).\n2. Instale Reorder desde el directorio de complementos de WordPress o cargue la carpeta `reorder` en `/wp-content/plugins/`.\n3. Active el complemento a través de la pantalla <strong>Complementos<strong>. 4. Opcionalmente, visite </strong>WooCommerce → Reordenar<strong> para configurar el texto del botón, los estados y la redirección; Los valores predeterminados sensatos funcionan de inmediato. 5. Ahora aparece un botón \"Volver a realizar el pedido\" en los pedidos anteriores que califican en </strong>Mi cuenta → Pedidos</strong>."
+msgstr "1. Instala y activa WooCommerce (8.0 o posterior).\n2. Instala Reorder desde el directorio de plugins de WordPress o sube la carpeta `reorder` a `/wp-content/plugins/`.\n3. Activa el plugin en la pantalla <strong>Plugins</strong>.\n4. Opcionalmente entra en <strong>WooCommerce → Reorder</strong> para configurar el texto del botón, los estados y la redirección; los valores predeterminados sensatos funcionan de inmediato.\n5. El botón «Pedir de nuevo» aparece ahora en pedidos anteriores que cumplan los requisitos en <strong>Mi cuenta → Pedidos</strong>."
 
 msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-reorder/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-reorder/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-reorder\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-reorder/issues"
-msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-reorder/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-reorder/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-reorder\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-reorder/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-reorder/docs/\n* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-reorder/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-reorder\n* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-reorder/issues"
 
 msgid "Yes. Reorder is free and licensed under the GPL."
-msgstr "Sí. Reordenar es gratuito y tiene licencia GPL."
+msgstr "Sí. Reorder es gratuito y tiene licencia GPL."
 
 msgid "Yes. Reorder is a WooCommerce extension and requires WooCommerce 8.0 or later. It shows an admin notice and stays inactive if WooCommerce is missing or out of date."
-msgstr "Sí. Reorder es una extensión de WooCommerce y requiere WooCommerce 8.0 o posterior. Muestra un aviso de administrador y permanece inactivo si WooCommerce falta o está desactualizado."
+msgstr "Sí. Reorder es una extensión de WooCommerce y requiere WooCommerce 8.0 o posterior. Muestra un aviso de administración y permanece inactivo si falta WooCommerce o está desactualizado."
 
 msgid "They are skipped, and the customer sees a notice naming the products that could not be re-added. Everything still purchasable is added to the cart."
-msgstr "Se omiten y el cliente ve un aviso que nombra los productos que no se pudieron volver a añadir. Todo lo que aún se puede comprar se añade al carrito."
+msgstr "Se omiten y el cliente ve un aviso con los productos que no se pudieron volver a añadir. Todo lo que aún se puede comprar se añade al carrito."
 
 msgid "By default, completed orders. You can enable Processing and On hold too under <strong>WooCommerce → Reorder</strong>. The button only shows to the customer who owns the order."
-msgstr "Por defecto, pedidos completados. También puedes habilitar Procesamiento y En espera en <strong>WooCommerce → Reordenar</strong>. El botón solo se muestra al cliente propietario del pedido."
+msgstr "Por defecto, pedidos completados. También puedes activar En proceso y En espera en <strong>WooCommerce → Reorder</strong>. El botón solo lo ve el cliente propietario del pedido."
 
 msgid "Yes. The original variation (e.g. size and colour) is preserved, so the correct variation is added back to the cart."
-msgstr "Sí. La variación original (por ejemplo, tamaño y color) se conserva, por lo que la variación correcta se vuelve a añadir al carrito."
+msgstr "Sí. Se conserva la variación original (p. ej. talla y color), así que vuelve la variación correcta al carrito."
 
 msgid "To the cart by default, or straight to checkout, your choice in the settings."
-msgstr "Al carrito por defecto, o directamente al pago, tu elección en la configuración."
+msgstr "Al carrito por defecto o directamente al pago, según elijas en los ajustes."
 
 msgid "Deleting the plugin from the <strong>Plugins</strong> screen runs the uninstall routine, which removes the `reorder_settings` and `reorder_db_version` options. Reorder stores no custom tables."
-msgstr "Al eliminar el complemento de la pantalla <strong>Complementos</strong> se ejecuta la rutina de desinstalación, que elimina las opciones `reorder_settings` y `reorder_db_version`. Reordenar tiendas sin tablas personalizadas."
+msgstr "Al borrar el plugin desde la pantalla <strong>Plugins</strong> se ejecuta la rutina de desinstalación, que elimina las opciones `reorder_settings` y `reorder_db_version`. Reorder no crea tablas personalizadas."
 
 msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
-msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+msgstr "Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos."
 
 msgid "Reorder does not connect to any external services. It only re-adds items to the standard WooCommerce cart on your own site."
 msgstr "Reorder no se conecta a ningún servicio externo. Solo vuelve a añadir artículos al carrito estándar de WooCommerce en tu propio sitio."
 
 msgid "1. The \"Order again\" button on the My Account orders list.\n2. Settings page: button text, order statuses, and redirect target."
-msgstr "1. El botón \"Ordenar nuevamente\" en la lista de pedidos de Mi Cuenta.\n2. Página de configuración: texto del botón, estados de pedidos y destino de redireccionamiento."
+msgstr "1. El botón «Pedir de nuevo» en la lista de pedidos de Mi cuenta.\n2. Página de ajustes: texto del botón, estados de pedido y destino de redirección."
+
+msgid "Plogins Reorder includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-reorder`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Reorder incluye traducciones al polaco, al alemán y al español para la interfaz del plugin. El dominio de texto es `plogins-reorder`, por lo que los paquetes de idioma de WordPress.org también pueden sobrescribir o ampliar estas traducciones incluidas."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Se añadieron traducciones incluidas al polaco, al alemán y al español para la interfaz del plugin."
 
 msgid "* First stable release."
 msgstr "* Primera versión estable."
 
 msgid "* Renamed to Plogins Reorder for WooCommerce for a more distinctive plugin name."
-msgstr "* Renombrado a Plogins Reorder for WooCommerce para obtener un nombre de complemento más distintivo."
+msgstr "* Renombrado a Plogins Reorder para WooCommerce para conseguir un nombre de plugin más distintivo."
 
 msgid "* Initial release: one-click reorder button on past orders, ownership-checked and nonce-protected, with configurable label, statuses, and redirect target."
-msgstr "* Lanzamiento inicial: botón para reordenar con un solo clic en pedidos anteriores, con propiedad verificada y no protegida, con etiqueta configurable, estados y destino de redireccionamiento."
+msgstr "* Versión inicial: botón de repetición de pedido con un clic en pedidos anteriores, con comprobación de propiedad y protección nonce, con etiqueta, estados y destino de redirección configurables."
 
