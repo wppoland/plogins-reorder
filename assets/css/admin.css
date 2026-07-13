@@ -152,14 +152,3 @@
 }
 
 /* ── Dark mode ────────────────────────────────────────────────────────── */
-
-@media (prefers-color-scheme: dark) {
-    .reorder-admin {
-        --reorder-accent: #fb923c;
-        --reorder-accent-ink: #1a1206;
-        --reorder-card-border: #3c434a;
-        --reorder-card-bg: #2c3338;
-        --reorder-muted: #a7aaad;
-        --reorder-wash: color-mix(in srgb, var(--reorder-accent) 18%, transparent);
-    }
-}
