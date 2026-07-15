@@ -6,14 +6,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/reorder\n"
 "POT-Creation-Date: 2026-06-16T20:23:56+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: wppoland.com <hello@wppoland.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Domain: plogins-reorder\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -116,8 +115,8 @@ msgstr "Po ponownym zamówieniu"
 #: src/Admin/Settings.php:113
 msgid ""
 "Where to send the customer once their items are back in the cart. Send "
-"straight to checkout for the fastest repeat purchase, or to the cart so they "
-"can review and adjust first."
+"straight to checkout for the fastest repeat purchase, or to the cart so they"
+" can review and adjust first."
 msgstr ""
 "Dokąd przekierować klienta po ponownym dodaniu pozycji do koszyka. Przejdź "
 "prosto do kasy, aby zapewnić najszybszy ponowny zakup, albo do koszyka, aby "
@@ -204,12 +203,15 @@ msgstr "Koszyk jest w tej chwili niedostępny. Spróbuj ponownie."
 #, php-format
 msgid "%d item from your order was added back to the cart."
 msgid_plural "%d items from your order were added back to the cart."
-msgstr[0] "%d pozycja z Twojego zamówienia została ponownie dodana do koszyka."
-msgstr[1] "%d pozycje z Twojego zamówienia zostały ponownie dodane do koszyka."
+msgstr[0] ""
+"%d pozycja z Twojego zamówienia została ponownie dodana do koszyka."
+msgstr[1] ""
+"%d pozycje z Twojego zamówienia zostały ponownie dodane do koszyka."
 msgstr[2] ""
 "%d pozycji z Twojego zamówienia zostało ponownie dodanych do koszyka."
 
-#. translators: %s: comma-separated list of product names that could not be re-added.
+#. translators: %s: comma-separated list of product names that could not be
+#. re-added.
 #: src/Service/ReorderService.php:194
 #, php-format
 msgid "These items are no longer available and were skipped: %s"
