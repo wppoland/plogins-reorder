@@ -54,7 +54,7 @@ Ja. Reorder ist kostenlos und unter der GPL lizenziert.
 Ja. Reorder ist eine WooCommerce-Erweiterung und erfordert WooCommerce 8.0 oder höher. Es zeigt einen Admin-Hinweis und bleibt inaktiv, wenn WooCommerce fehlt oder veraltet ist.
 
 = What happens to items that are no longer available? =
-Sie werden übersprungen, und der Kunde sieht einen Hinweis mit den Produkten, die nicht erneut hinzugefügt werden konnten. Alles, was noch kaufbar ist, landet im Warenkorb.
+Du wirst übersprungen, und der Kunde sieht einen Hinweis mit den Produkten, die nicht erneut hinzugefügt werden konnten. Alles, was noch kaufbar ist, landet im Warenkorb.
 
 = Which orders show the button? =
 Standardmäßig abgeschlossene Bestellungen. Du kannst In Bearbeitung und Angehalten ebenfalls unter <strong>WooCommerce → Reorder</strong> aktivieren. Der Button wird nur dem Kunden angezeigt, dem die Bestellung gehört.
