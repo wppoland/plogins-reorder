@@ -32,8 +32,8 @@ msgid ""
 "Add a one-click reorder button to past orders so customers can re-add every "
 "still-purchasable item to the cart and buy again fast."
 msgstr ""
-"Añade un botón para reordenar con un solo clic a pedidos anteriores para que"
-" los clientes puedan volver a añadir al carrito todos los artículos que aún "
+"Añade un botón para reordenar con un solo clic a pedidos anteriores para que "
+"los clientes puedan volver a añadir al carrito todos los artículos que aún "
 "se pueden comprar y volver a comprar rápidamente."
 
 #. Author of the plugin
@@ -63,8 +63,8 @@ msgid ""
 "Reorder requires WooCommerce %1$s or higher. You are running WooCommerce "
 "%2$s."
 msgstr ""
-"Reordenar requiere WooCommerce %1$s o superior. Estás ejecutando WooCommerce"
-" %2$s."
+"Reordenar requiere WooCommerce %1$s o superior. Estás ejecutando WooCommerce "
+"%2$s."
 
 #: src/Admin/Settings.php:42
 msgid "Reorder Settings"
@@ -116,8 +116,8 @@ msgstr "Después de reordenar"
 #: src/Admin/Settings.php:113
 msgid ""
 "Where to send the customer once their items are back in the cart. Send "
-"straight to checkout for the fastest repeat purchase, or to the cart so they"
-" can review and adjust first."
+"straight to checkout for the fastest repeat purchase, or to the cart so they "
+"can review and adjust first."
 msgstr ""
 "Dónde enviar al cliente una vez que sus artículos estén nuevamente en el "
 "carrito. Envíelo directamente a la caja para repetir la compra más "
@@ -154,8 +154,8 @@ msgid ""
 "Add a one-click reorder button to past orders so customers can buy the same "
 "items again in seconds."
 msgstr ""
-"Añade un botón para reordenar con un solo clic a pedidos anteriores para que"
-" los clientes puedan volver a comprar los mismos artículos en segundos."
+"Añade un botón para reordenar con un solo clic a pedidos anteriores para que "
+"los clientes puedan volver a comprar los mismos artículos en segundos."
 
 #: src/Admin/Settings.php:212
 msgid "Go to the cart"
@@ -206,8 +206,7 @@ msgid_plural "%d items from your order were added back to the cart."
 msgstr[0] "%d artículo de su pedido se volvió a añadir al carrito."
 msgstr[1] "%d artículos de su pedido se agregaron nuevamente al carrito."
 
-#. translators: %s: comma-separated list of product names that could not be
-#. re-added.
+#. translators: %s: comma-separated list of product names that could not be re-added.
 #: src/Service/ReorderService.php:194
 #, php-format
 msgid "These items are no longer available and were skipped: %s"

@@ -83,7 +83,7 @@ msgstr "Einstellungen"
 
 #: src/Admin/Settings.php:85
 msgid "The button"
-msgstr "Der Button"
+msgstr "Der Knopf"
 
 #: src/Admin/Settings.php:87
 msgid ""
