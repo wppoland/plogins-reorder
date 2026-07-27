@@ -20,9 +20,16 @@ final class Settings implements HasHooks
     private const SECTION_GENERAL = 'reorder_general';
     private const SECTION_DISPLAY = 'reorder_display';
 
+    private ?ProUpsell $proUpsell = null;
+
     public function __construct(
         private readonly SettingsRepository $settings,
     ) {
+    }
+
+    private function proUpsell(): ProUpsell
+    {
+        return $this->proUpsell ??= new ProUpsell();
     }
 
     public function registerHooks(): void
@@ -33,6 +40,7 @@ final class Settings implements HasHooks
             'plugin_action_links_' . plugin_basename(\Reorder\PLUGIN_FILE),
             [$this, 'addSettingsLink'],
         );
+        $this->proUpsell()->registerHooks();
     }
 
     public function addMenuPage(): void
@@ -155,6 +163,9 @@ final class Settings implements HasHooks
         ?>
         <div class="wrap reorder-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+
+            <?php $this->proUpsell()->banner(); ?>
+
             <p class="reorder-admin__lead">
                 <?php esc_html_e('Add a one-click reorder button to past orders so customers can buy the same items again in seconds.', 'plogins-reorder'); ?>
             </p>
@@ -165,6 +176,8 @@ final class Settings implements HasHooks
                 submit_button();
                 ?>
             </form>
+
+            <?php $this->proUpsell()->cards(); ?>
         </div>
         <?php
     }
