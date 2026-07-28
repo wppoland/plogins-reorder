@@ -13,7 +13,7 @@ Dodaje przycisk «Zamów ponownie» do poprzednich zamówień WooCommerce. Jedno
 
 == Description ==
 
-Reorder dodaje przycisk <strong>«Zamów ponownie»</strong> do każdego poprzedniego zamówienia w WooCommerce <strong>Moje konto → Zamówienia</strong>. Gdy klient go kliknie, każda wciąż dostępna pozycja z tego zamówienia wraca do koszyka, a klient trafia na stronę koszyka lub kasy — zależnie od tego, co wybierzesz w ustawieniach.
+Reorder dodaje przycisk <strong>«Zamów ponownie»</strong> do każdego poprzedniego zamówienia w WooCommerce <strong>Moje konto → Zamówienia</strong>. Gdy klient go kliknie, każda wciąż dostępna pozycja z tego zamówienia wraca do koszyka, a klient trafia na stronę koszyka lub kasy, zależnie od tego, co wybierzesz w ustawieniach.
 
 Pozycje, których już nie ma (usunięte, ukryte lub niedostępne), są pomijane, a klient widzi powiadomienie z nazwami produktów, których nie udało się dodać, więc w koszyku nie ma cichych niespodzianek.
 
@@ -21,13 +21,13 @@ Co robi wtyczka:
 
 * Ponownie dodaje produkty z całego zamówienia jednym kliknięciem, zamiast zmuszać klienta do szukania każdej pozycji od nowa.
 * Zachowuje oryginalną wariantę: jeśli kupiono rozmiar M w kolorze niebieskim, wraca właśnie ta wariant.
-* Sprawdza nonce w każdym linku ponownego zamówienia i potwierdza, że zalogowany klient jest właścicielem zamówienia, zanim dotknie koszyka — jeden klient nie może ponowić zamówienia innego.
+* Sprawdza nonce w każdym linku ponownego zamówienia i potwierdza, że zalogowany klient jest właścicielem zamówienia, zanim dotknie koszyka, jeden klient nie może ponowić zamówienia innego.
 * Pomija niedostępne produkty z powiadomieniem, zamiast zostawiać klienta z uszkodzonym lub w połowie wypełnionym koszykiem.
 * Nie dodaje JavaScriptu front-endu ani dodatkowego znacznika. Przycisk to zwykła akcja zamówienia WooCommerce z małym, tematycznym arkuszem stylów (ładowanym tylko na stronie zamówień), więc wyróżnia się bez zmiany układu strony konta.
 
 Ustawienia znajdują się w <strong>WooCommerce → Reorder</strong>: zmień etykietę przycisku, wybierz, które statusy zamówień dostają przycisk (Zrealizowane, W trakcie realizacji, Wstrzymane), i zdecyduj, czy ponowne zamówienie trafia do koszyka, czy do kasy.
 
-Kod źródłowy i zgłoszenia błędów na GitHubie: https://github.com/wppoland/plogins-reorder — zgłoszenia i poprawki mile widziane.
+Kod źródłowy i zgłoszenia błędów na GitHubie: https://github.com/wppoland/plogins-reorder, zgłoszenia i poprawki mile widziane.
 
 == Installation ==
 
@@ -63,7 +63,7 @@ Domyślnie zamówienia zrealizowane. Możesz też włączyć W trakcie realizacj
 Tak. Oryginalna wariant jest zachowana (np. rozmiar i kolor), więc do koszyka wraca właściwa wariant.
 
 = Where does the customer go after reordering? =
-Domyślnie do koszyka lub prosto do kasy — według Twojego wyboru w ustawieniach.
+Domyślnie do koszyka lub prosto do kasy, według Twojego wyboru w ustawieniach.
 
 = How do I remove all plugin data? =
 Usunięcie wtyczki z ekranu <strong>Wtyczki</strong> uruchamia procedurę dezinstalacji, która usuwa opcje `reorder_settings` i `reorder_db_version`. Reorder nie tworzy własnych tabel.

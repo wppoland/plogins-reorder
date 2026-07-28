@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: reorder.php
 msgid "Reorder - Quick Reorder for WooCommerce"
-msgstr "Nachbestellung – Schnelle Nachbestellung für WooCommerce"
+msgstr "Nachbestellung, Schnelle Nachbestellung für WooCommerce"
 
 #. Plugin URI of the plugin
 #: reorder.php

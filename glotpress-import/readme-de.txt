@@ -13,7 +13,7 @@ Fügt früheren WooCommerce-Bestellungen einen «Erneut bestellen»-Button hinzu
 
 == Description ==
 
-Reorder fügt jeder vergangenen Bestellung in WooCommerce <strong>Mein Konto → Bestellungen</strong> einen <strong>«Erneut bestellen»</strong>-Button hinzu. Klickt ein Kunde darauf, landet jeder noch kaufbare Artikel aus dieser Bestellung wieder im Warenkorb, und er kommt auf die Warenkorbseite oder zur Kasse — je nachdem, was du in den Einstellungen gewählt hast.
+Reorder fügt jeder vergangenen Bestellung in WooCommerce <strong>Mein Konto → Bestellungen</strong> einen <strong>«Erneut bestellen»</strong>-Button hinzu. Klickt ein Kunde darauf, landet jeder noch kaufbare Artikel aus dieser Bestellung wieder im Warenkorb, und er kommt auf die Warenkorbseite oder zur Kasse, je nachdem, was du in den Einstellungen gewählt hast.
 
 Artikel, die nicht mehr verfügbar sind (gelöscht, ausgeblendet oder nicht vorrätig), werden ausgelassen, und der Kunde sieht einen Hinweis mit den Produkten, die nicht hinzugefügt werden konnten, sodass es im Warenkorb keine stillen Überraschungen gibt.
 
@@ -21,13 +21,13 @@ Was das Plugin macht:
 
 * Legt die Produkte einer ganzen Bestellung mit einem Klick wieder in den Warenkorb, statt dass der Kunde jeden Artikel erneut suchen muss.
 * Behält die ursprüngliche Variante bei: Wurde Medium in Blau gekauft, kommt genau diese Variante zurück.
-* Prüft die Nonce auf jedem Nachbestell-Link und bestätigt, dass der eingeloggte Kunde der Bestellinhaber ist, bevor der Warenkorb angefasst wird — ein Kunde kann die Bestellung eines anderen nicht erneut auslösen.
+* Prüft die Nonce auf jedem Nachbestell-Link und bestätigt, dass der eingeloggte Kunde der Bestellinhaber ist, bevor der Warenkorb angefasst wird, ein Kunde kann die Bestellung eines anderen nicht erneut auslösen.
 * Überspringt nicht verfügbare Produkte mit einem Hinweis, statt den Kunden mit einem kaputten oder halb gefüllten Warenkorb zurückzulassen.
 * Fügt kein Frontend-JavaScript und kein zusätzliches Markup hinzu. Der Button ist eine normale WooCommerce-Bestellaktion mit einem kleinen, thematisierbaren Stylesheet (nur auf der Bestellseite geladen), sodass er auffällt, ohne das Layout deiner Kontoseite zu verschieben.
 
 Die Einstellungen liegen unter <strong>WooCommerce → Reorder</strong>: Ändere die Button-Beschriftung, wähle, welche Bestellstatus den Button bekommen (Abgeschlossen, In Bearbeitung, Angehalten), und entscheide, ob die Nachbestellung im Warenkorb oder an der Kasse landet.
 
-Quellcode und Fehlerberichte auf GitHub: https://github.com/wppoland/plogins-reorder — Issues und Patches willkommen.
+Quellcode und Fehlerberichte auf GitHub: https://github.com/wppoland/plogins-reorder, Issues und Patches willkommen.
 
 == Installation ==
 
@@ -63,7 +63,7 @@ Standardmäßig abgeschlossene Bestellungen. Du kannst In Bearbeitung und Angeha
 Ja. Die ursprüngliche Variante (z. B. Größe und Farbe) bleibt erhalten, sodass die richtige Variante wieder in den Warenkorb gelegt wird.
 
 = Where does the customer go after reordering? =
-Standardmäßig in den Warenkorb oder direkt zur Kasse — deine Wahl in den Einstellungen.
+Standardmäßig in den Warenkorb oder direkt zur Kasse, deine Wahl in den Einstellungen.
 
 = How do I remove all plugin data? =
 Das Löschen des Plugins über den Bildschirm <strong>Plugins</strong> führt die Deinstallationsroutine aus, die die Optionen `reorder_settings` und `reorder_db_version` entfernt. Reorder speichert keine eigenen Tabellen.
