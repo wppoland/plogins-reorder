@@ -217,7 +217,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to
  * .reorder-admin, using the plugin's own burnt-amber accent. The CTA
  * buttons use a fixed --reorder-pro-accent (#c2410c) so white text
