@@ -17,8 +17,8 @@ return [
     'currency'   => 'EUR',
     'price_pln'  => 129,
     'lead'       => [
-        'en' => 'Reorder reward coupon — feature-complete PRO.',
-        'pl' => 'Kupon nagrody za ponowne zamówienie — kompletna wersja PRO.',
+        'en' => 'Reorder reward coupon. Feature-complete PRO.',
+        'pl' => 'Kupon nagrody za ponowne zamówienie. Kompletna wersja PRO.',
     ],
     'features'   => [
         [

@@ -84,7 +84,7 @@ final class ReorderService implements HasHooks
 
         $order = wc_get_order($orderId);
 
-        // Ownership + qualification check — never act on someone else's order (no IDOR).
+        // Ownership + qualification check, never act on someone else's order (no IDOR).
         if (! $order instanceof WC_Order
             || $order->get_customer_id() !== get_current_user_id()
             || ! $this->orderQualifies($order)
@@ -158,7 +158,7 @@ final class ReorderService implements HasHooks
         /**
          * Fires after a reorder has re-added the order's items to the cart.
          *
-         * Add-ons (e.g. Reorder Pro) hook this to react to a completed reorder —
+         * Add-ons (e.g. Reorder Pro) hook this to react to a completed reorder, 
          * for example, applying a reward coupon to the cart.
          *
          * @param WC_Order     $order   The order that was reordered.
