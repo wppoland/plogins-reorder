@@ -11,7 +11,7 @@ use Reorder\Plugin;
 
 /**
  * Enqueues the storefront stylesheet that gives the "Order again" action its
- * own mark — but only on the My Account → Orders page where the button lives,
+ * own mark, but only on the My Account → Orders page where the button lives,
  * so nothing is loaded on the rest of the store.
  *
  * CSS only: the plugin adds no front-end JavaScript and no extra markup. The

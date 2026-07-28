@@ -72,7 +72,7 @@ msgid ""
 "https://github.com/wppoland/plogins-reorder; issues and patches welcome."
 msgstr ""
 "Código fuente e informes de errores en GitHub: "
-"https://github.com/wppoland/plogins-reorder — incidencias y parches "
+"https://github.com/wppoland/plogins-reorder, incidencias y parches "
 "bienvenidos."
 
 msgid ""

@@ -27,7 +27,7 @@ Qué hace el plugin:
 
 Los ajustes están en <strong>WooCommerce → Reorder</strong>: cambia la etiqueta del botón, elige qué estados de pedido muestran el botón (Completado, En proceso, En espera) y decide si la repetición del pedido va al carrito o al pago.
 
-Código fuente e informes de errores en GitHub: https://github.com/wppoland/plogins-reorder — incidencias y parches bienvenidos.
+Código fuente e informes de errores en GitHub: https://github.com/wppoland/plogins-reorder, incidencias y parches bienvenidos.
 
 == Installation ==
 

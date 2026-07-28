@@ -25,7 +25,7 @@ final class Plugin
         $this->container = new Container();
 
         // Register service factories up front so the container is usable from the
-        // activation hook, which fires during activate_plugin() — BEFORE
+        // activation hook, which fires during activate_plugin(), BEFORE
         // plugins_loaded and boot() run. (Lazy closures: nothing is built here.)
         (require PLUGIN_DIR . '/config/services.php')($this->container);
     }

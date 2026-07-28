@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Reorder – Admin UI
+   Reorder, Admin UI
    Polishes the Settings screen: tidy sections, clear choice groups, and a live
    preview of the storefront button so a merchant sees the effect of each
    setting as they change it. Carries the family burnt-amber accent (matched to
-   the storefront button) on one restrained touch — the section heading rule —
+   the storefront button) on one restrained touch, the section heading rule, 
    and nowhere else. Themeable, dark-mode aware, motion-safe. Scoped to
    .reorder-admin so it never leaks into the rest of wp-admin.
 

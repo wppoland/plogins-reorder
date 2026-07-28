@@ -1,9 +1,9 @@
 /**
- * Reorder – Settings preview
+ * Reorder, Settings preview
  *
  * Keeps the live button preview in sync as the merchant edits the settings,
  * so they see the storefront button change before they save. Vanilla JS, no
- * dependencies; degrades gracefully — without it, the preview simply shows the
+ * dependencies; degrades gracefully, without it, the preview simply shows the
  * saved values rendered server-side.
  */
 ( function () {
