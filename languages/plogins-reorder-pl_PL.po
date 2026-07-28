@@ -6,16 +6,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/reorder\n"
 "POT-Creation-Date: 2026-06-16T20:23:56+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-reorder\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
+"X-Domain: plogins-reorder\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: reorder.php
@@ -80,13 +80,15 @@ msgstr "Ustawienia"
 
 #: src/Admin/Settings.php:85
 msgid "The button"
-msgstr ""
+msgstr "Przycisk"
 
 #: src/Admin/Settings.php:87
 msgid ""
 "Set what the reorder button says and where it takes the customer. The "
 "preview shows exactly what they will see in My Account."
 msgstr ""
+"Ustaw, co mówi przycisk ponownego zamówienia i dokąd prowadzi klienta. "
+"Podgląd pokazuje dokładnie to, co zobaczą na Moim koncie."
 
 #: src/Admin/Settings.php:94
 msgid "Button text"
@@ -123,7 +125,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:119
 msgid "Preview"
-msgstr ""
+msgstr "Podgląd"
 
 #: src/Admin/Settings.php:129
 msgid "Where it appears"
@@ -167,21 +169,23 @@ msgstr "Przejdź prosto do kasy"
 
 #: src/Admin/Settings.php:264
 msgid "the cart"
-msgstr ""
+msgstr "koszyka"
 
 #: src/Admin/Settings.php:265
 msgid "checkout"
-msgstr ""
+msgstr "kasy"
 
 #: src/Admin/Settings.php:277
 msgid "In My Account → Orders"
-msgstr ""
+msgstr "W Moim Koncie → Zamówienia"
 
 #. translators: %s: the cart or checkout destination, e.g. "the cart".
 #: src/Admin/Settings.php:287
 #, php-format
 msgid "After clicking, the order is re-added and the customer is taken to %s."
 msgstr ""
+"Po kliknięciu zamówienie zostaje dodane ponownie i Klient zostaje "
+"przeniesiony do %s."
 
 #: src/Service/ReorderService.php:77
 msgid "That reorder link has expired. Please try again."
@@ -214,6 +218,66 @@ msgstr "Te pozycje nie są już dostępne i zostały pominięte: %s"
 #: src/Service/ReorderService.php:202
 msgid "There was nothing from that order to add to the cart."
 msgstr "Z tego zamówienia nie było nic, co można dodać do koszyka."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
 
 #~ msgid "General"
 #~ msgstr "Ogólne"

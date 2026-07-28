@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Reorder – Storefront
+   Reorder, Storefront
    The "Order again" action in My Account → Orders. Among a row of one-item
    glances (View, Pay, Cancel), this is the one that gathers a whole order
-   back up — so it carries Reorder's own mark: a refill loop that closes on
+   back up, so it carries Reorder's own mark: a refill loop that closes on
    intent, and a warm amber fill that tops the basket back up behind the label.
 
    A polite guest: inherits the theme's button geometry (font, radius, size)
-   and only spends its accent on the one moment that matters. CSS only — the
+   and only spends its accent on the one moment that matters. CSS only, the
    plugin's "no front-end JavaScript" promise holds. Themeable via --reorder-*
    tokens, dark-scheme aware, motion-safe, and zero layout shift (the glyph's
    track is always reserved).
@@ -15,8 +15,8 @@
 .woocommerce-button.button.reorder,
 a.button.reorder {
     /* Reorder's own world: the cycle, the "the usual" order returned to.
-       Burnt amber — distinct from the admin's WP blue and from sibling
-       plugins — reading as a worn-in, come-back-to favourite. Falls back to
+       Burnt amber, distinct from the admin's WP blue and from sibling
+       plugins, reading as a worn-in, come-back-to favourite. Falls back to
        the theme's own button colour where a token is unset. */
     --reorder-accent: #c2410c;
     --reorder-accent-ink: #ffffff;
@@ -35,7 +35,7 @@ a.button.reorder {
 }
 
 /* The refill wash: a warm fill that sweeps in from the start edge behind the
-   label — the basket topping back up. Sits under the text + glyph (z-index). */
+   label, the basket topping back up. Sits under the text + glyph (z-index). */
 .woocommerce-button.button.reorder::after,
 a.button.reorder::after {
     content: "";
@@ -117,7 +117,7 @@ a.button.reorder:active::before {
         );
 }
 
-/* Visible, on-brand keyboard focus — never rely on the theme's default. */
+/* Visible, on-brand keyboard focus, never rely on the theme's default. */
 .woocommerce-button.button.reorder:focus-visible,
 a.button.reorder:focus-visible {
     outline: 2px solid var(--reorder-ring);
@@ -125,7 +125,7 @@ a.button.reorder:focus-visible {
 }
 
 /* ── Motion: the one earned micro-interaction ─────────────────────────────
-   The loop closes — a single, deliberate full turn — only when the shopper
+   The loop closes, a single, deliberate full turn, only when the shopper
    reaches for it, and only when motion is welcome. The wash eases in with it. */
 @media (prefers-reduced-motion: no-preference) {
     .woocommerce-button.button.reorder::before,

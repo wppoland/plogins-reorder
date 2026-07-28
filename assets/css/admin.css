@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Reorder – Admin UI
+   Reorder, Admin UI
    Polishes the Settings screen: tidy sections, clear choice groups, and a live
    preview of the storefront button so a merchant sees the effect of each
    setting as they change it. Carries the family burnt-amber accent (matched to
-   the storefront button) on one restrained touch — the section heading rule —
+   the storefront button) on one restrained touch, the section heading rule, 
    and nowhere else. Themeable, dark-mode aware, motion-safe. Scoped to
    .reorder-admin so it never leaks into the rest of wp-admin.
 
@@ -151,17 +151,69 @@
     font-weight: 600;
 }
 
+/* ── PRO upsell ────────────────────────────────────────────────────────────
+   Dismissible banner + "what PRO adds" locked cards. Pure advertising (no
+   disabled inputs), scoped to .reorder-admin. Carries the family burnt-amber
+   accent. The dark accent #fb923c on #1d2327 = 7.02:1 (AA text, AA UI). */
+
+.reorder-admin {
+    --reorder-pro-radius: 8px;
+    --reorder-pro-radius-sm: 6px;
+    --reorder-pro-gap: 20px;
+}
+
+/* Top banner */
+.reorder-admin .reorder-pro-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 1em 0 var(--reorder-pro-gap);
+    padding: 12px 16px;
+    border: 1px solid color-mix(in srgb, var(--reorder-accent) 30%, #dcdcde);
+    border-inline-start: 4px solid var(--reorder-accent);
+    border-radius: var(--reorder-pro-radius);
+    background: color-mix(in srgb, var(--reorder-accent) 7%, #fff);
+}
+.reorder-admin .reorder-pro-banner__tag,
+.reorder-admin .reorder-pro-card__badge {
+    font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.reorder-admin .reorder-pro-banner__tag { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; color: var(--reorder-accent-ink); background: var(--reorder-accent); }
+.reorder-admin .reorder-pro-banner__text { flex: 1 1 auto; margin: 0; color: #1d2327; }
+.reorder-admin .reorder-pro-banner__sub { margin-inline-start: 4px; color: var(--reorder-muted); }
+.reorder-admin .reorder-pro-banner__price { margin-inline-start: 6px; color: var(--reorder-muted); font-weight: 600; white-space: nowrap; }
+.reorder-admin .reorder-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var(--reorder-muted); padding: 4px; border-radius: 4px; }
+.reorder-admin .reorder-pro-banner__dismiss:hover { color: #1d2327; background: rgba(0, 0, 0, .05); }
+
+/* Accent CTA button (override WP blue with the readable dark accent) */
+.reorder-admin .reorder-pro-banner__cta.button-primary {
+    background: var(--reorder-accent); border-color: color-mix(in srgb, var(--reorder-accent) 80%, #000); color: var(--reorder-accent-ink); text-shadow: none; box-shadow: none;
+}
+.reorder-admin .reorder-pro-banner__cta.button-primary:hover { background: color-mix(in srgb, var(--reorder-accent) 88%, #000); }
+
+/* "What PRO adds" locked cards */
+.reorder-admin .reorder-pro-cards { max-width: 60rem; margin: var(--reorder-pro-gap) 0 0; }
+.reorder-admin .reorder-pro-cards__title { font-size: 15px; margin-block: var(--reorder-pro-gap) 12px; }
+.reorder-admin .reorder-pro-cards__grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.reorder-admin .reorder-pro-card { position: relative; padding: 16px; border: 1px solid var(--reorder-card-border); border-radius: var(--reorder-pro-radius-sm); background: color-mix(in srgb, var(--reorder-accent) 3%, #fff); }
+.reorder-admin .reorder-pro-card__badge { position: absolute; top: 12px; inset-inline-end: 12px; padding: 1px 7px; border-radius: 999px; color: var(--reorder-accent); border: 1px solid color-mix(in srgb, var(--reorder-accent) 40%, #fff); }
+.reorder-admin .reorder-pro-card__lock { display: inline-block; margin-bottom: 6px; }
+.reorder-admin .reorder-pro-card__lock::before { content: "\f160"; font-family: dashicons; font-size: 15px; line-height: 1.2; color: var(--reorder-accent); }
+.reorder-admin .reorder-pro-card__title { margin: 0 0 6px; font-size: 14px; line-height: 1.3; }
+.reorder-admin .reorder-pro-card__desc { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--reorder-muted); }
+
+@media (prefers-reduced-motion: no-preference) {
+    .reorder-admin .reorder-pro-banner__cta { transition: background-color .15s ease, border-color .15s ease; }
+}
+
 /* ── Dark mode ────────────────────────────────────────────────────────── */
 
 @media (prefers-color-scheme: dark) {
-    .reorder-admin {
-        --reorder-accent: #fb923c;
-        --reorder-accent-ink: #1a1206;
-        --reorder-card-border: #3c434a;
-        --reorder-card-bg: #2c3338;
-        --reorder-muted: #a7aaad;
-        --reorder-wash: color-mix(in srgb, var(--reorder-accent) 18%, transparent);
-    }
+    .reorder-admin .reorder-pro-banner { border-color: color-mix(in srgb, var(--reorder-accent) 40%, #3c434a); background: color-mix(in srgb, var(--reorder-accent) 12%, #1d2327); }
+    .reorder-admin .reorder-pro-banner__text { color: #f0f0f1; }
+    .reorder-admin .reorder-pro-banner__dismiss:hover { color: #f0f0f1; background: rgba(255, 255, 255, .08); }
+    .reorder-admin .reorder-pro-card { border-color: #3c434a; background: color-mix(in srgb, var(--reorder-accent) 8%, #1d2327); }
+    .reorder-admin .reorder-pro-card__badge { border-color: color-mix(in srgb, var(--reorder-accent) 50%, #1d2327); }
 }
 
 /* ------------------------------------------------------------------ *
