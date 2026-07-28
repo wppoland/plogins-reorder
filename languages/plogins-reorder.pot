@@ -26,7 +26,9 @@ msgstr ""
 
 #. Description of the plugin
 #: reorder.php
-msgid "Add a one-click reorder button to past orders so customers can re-add every still-purchasable item to the cart and buy again fast."
+msgid ""
+"Add a one-click reorder button to past orders so customers can re-add every "
+"still-purchasable item to the cart and buy again fast."
 msgstr ""
 
 #. Author of the plugin
@@ -52,7 +54,9 @@ msgstr ""
 #. translators: 1: Required WC version, 2: Current WC version
 #: reorder.php:87
 #, php-format
-msgid "Reorder requires WooCommerce %1$s or higher. You are running WooCommerce %2$s."
+msgid ""
+"Reorder requires WooCommerce %1$s or higher. You are running WooCommerce "
+"%2$s."
 msgstr ""
 
 #: src/Admin/Settings.php:42
@@ -72,21 +76,25 @@ msgid "The button"
 msgstr ""
 
 #: src/Admin/Settings.php:87
-msgid "Set what the reorder button says and where it takes the customer. The preview shows exactly what they will see in My Account."
+msgid ""
+"Set what the reorder button says and where it takes the customer. The "
+"preview shows exactly what they will see in My Account."
 msgstr ""
 
 #: src/Admin/Settings.php:94
 msgid "Button text"
 msgstr ""
 
-#: src/Admin/Settings.php:100
-#: src/Admin/Settings.php:270
+#: src/Admin/Settings.php:100 src/Admin/Settings.php:270
 #: src/Settings/SettingsRepository.php:58
 msgid "Order again"
 msgstr ""
 
 #: src/Admin/Settings.php:101
-msgid "Label shown on the reorder button in My Account. An action phrase such as \"Order again\" or \"Buy these again\" works well. Leave blank to use the default."
+msgid ""
+"Label shown on the reorder button in My Account. An action phrase such as "
+"\"Order again\" or \"Buy these again\" works well. Leave blank to use the "
+"default."
 msgstr ""
 
 #: src/Admin/Settings.php:107
@@ -94,7 +102,10 @@ msgid "After reordering"
 msgstr ""
 
 #: src/Admin/Settings.php:113
-msgid "Where to send the customer once their items are back in the cart. Send straight to checkout for the fastest repeat purchase, or to the cart so they can review and adjust first."
+msgid ""
+"Where to send the customer once their items are back in the cart. Send "
+"straight to checkout for the fastest repeat purchase, or to the cart so they "
+"can review and adjust first."
 msgstr ""
 
 #: src/Admin/Settings.php:119
@@ -114,11 +125,16 @@ msgid "Order statuses"
 msgstr ""
 
 #: src/Admin/Settings.php:144
-msgid "The button only appears on orders with one of the ticked statuses. \"Completed\" is the usual choice; add \"Processing\" if you want customers to reorder before fulfilment."
+msgid ""
+"The button only appears on orders with one of the ticked statuses. "
+"\"Completed\" is the usual choice; add \"Processing\" if you want customers "
+"to reorder before fulfilment."
 msgstr ""
 
 #: src/Admin/Settings.php:158
-msgid "Add a one-click reorder button to past orders so customers can buy the same items again in seconds."
+msgid ""
+"Add a one-click reorder button to past orders so customers can buy the same "
+"items again in seconds."
 msgstr ""
 
 #: src/Admin/Settings.php:212
@@ -175,4 +191,64 @@ msgstr ""
 
 #: src/Service/ReorderService.php:202
 msgid "There was nothing from that order to add to the cart."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""
