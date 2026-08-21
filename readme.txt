@@ -27,7 +27,7 @@ What the plugin does:
 
 Settings live under **WooCommerce → Reorder**: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout.
 
-Source and bug reports live on GitHub at https://github.com/wppoland/plogins-reorder; issues and patches welcome.
+Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder); issues and patches welcome.
 
 == Installation ==
 
@@ -41,10 +41,10 @@ Source and bug reports live on GitHub at https://github.com/wppoland/plogins-reo
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-reorder/docs/
-* **Plugin page** - https://plogins.com/plogins-reorder/
-* **Source code** - https://github.com/wppoland/plogins-reorder
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-reorder/issues
+* **Documentation**: [plogins.com/plogins-reorder/docs/](https://plogins.com/plogins-reorder/docs/)
+* **Plugin page**: [plogins.com/plogins-reorder/](https://plogins.com/plogins-reorder/)
+* **Source code**: [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-reorder/issues](https://github.com/wppoland/plogins-reorder/issues)
 
 
 = Is Reorder free? =
