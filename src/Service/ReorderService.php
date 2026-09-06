@@ -47,6 +47,13 @@ final class ReorderService implements HasHooks
      */
     public function addListAction(array $actions, $order): array
     {
+        // WooCommerce 10.9 started feeding this filter into order-details.php,
+        // which also renders the order-received screen. "Order again" makes no
+        // sense on the page confirming the order that was just placed.
+        if (function_exists('is_order_received_page') && is_order_received_page()) {
+            return $actions;
+        }
+
         if (! $order instanceof WC_Order || ! $this->orderQualifies($order)) {
             return $actions;
         }
