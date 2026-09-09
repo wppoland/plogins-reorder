@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Plugin Name:       Plogins Reorder - One-Click Reorder for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-reorder/
  * Description:        Add a one-click reorder button to past orders so customers can re-add every still-purchasable item to the cart and buy again fast.
- * Version:           1.0.10
+ * Version:           1.0.11
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Author:            WPPoland.com
@@ -27,7 +27,7 @@ namespace Reorder;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.10';
+const VERSION     = '1.0.11';
 const PLUGIN_FILE     = __FILE__;
 const PLUGIN_DIR      = __DIR__;
 const MIN_PHP_VERSION = '8.1.0';
