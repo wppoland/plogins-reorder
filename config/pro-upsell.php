@@ -29,8 +29,8 @@ return [
             'pl' => ['title' => 'Odporny na błędne kody', 'desc' => 'Nieprawidłowe lub wygasłe kody są pomijane po cichu, więc koszyk nigdy się nie psuje.'],
         ],
         [
-            'en' => ['title' => 'Reward settings', 'desc' => 'Configure the coupon under WooCommerce → Reorder → "Reorder reward (Pro)".'],
-            'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce → Reorder → „Nagroda za ponowne zamówienie (Pro)”.'],
+            'en' => ['title' => 'Reward settings', 'desc' => 'Configure the coupon under WooCommerce > Reorder > "Reorder reward (Pro)".'],
+            'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce > Reorder > „Nagroda za ponowne zamówienie (Pro)”.'],
         ],
         [
             'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Reorder service container; without it the add-on stays dormant.'],
