@@ -28,7 +28,7 @@ return static function (Container $c): void {
         $c->get(SettingsRepository::class),
     ));
 
-    // Storefront (only outside wp-admin: the My Account → Orders button styling).
+    // Storefront (only outside wp-admin: the My Account > Orders button styling).
     if (! is_admin()) {
         $c->singleton(StorefrontAssets::class, static fn (): StorefrontAssets => new StorefrontAssets());
     }

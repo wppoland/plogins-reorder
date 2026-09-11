@@ -288,7 +288,7 @@ final class Settings implements HasHooks
 
         printf(
             '<p class="reorder-preview__label">%s</p>',
-            esc_html__('In My Account → Orders', 'plogins-reorder'),
+            esc_html__('In My Account > Orders', 'plogins-reorder'),
         );
 
         printf(
