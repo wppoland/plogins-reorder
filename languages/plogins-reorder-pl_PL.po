@@ -176,8 +176,8 @@ msgid "checkout"
 msgstr "kasy"
 
 #: src/Admin/Settings.php:277
-msgid "In My Account → Orders"
-msgstr "W Moim Koncie → Zamówienia"
+msgid "In My Account > Orders"
+msgstr "W Moim Koncie > Zamówienia"
 
 #. translators: %s: the cart or checkout destination, e.g. "the cart".
 #: src/Admin/Settings.php:287

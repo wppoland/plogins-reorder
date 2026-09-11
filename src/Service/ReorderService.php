@@ -31,7 +31,7 @@ final class ReorderService implements HasHooks
 
     public function registerHooks(): void
     {
-        // Button in the My Account → Orders list (one row per order).
+        // Button in the My Account > Orders list (one row per order).
         add_filter('woocommerce_my_account_my_orders_actions', [$this, 'addListAction'], 10, 2);
 
         // Handle the reorder request early, before output, so we can redirect.

@@ -13,7 +13,7 @@ Dodaje przycisk «Zamów ponownie» do poprzednich zamówień WooCommerce. Jedno
 
 == Description ==
 
-Reorder dodaje przycisk <strong>«Zamów ponownie»</strong> do każdego poprzedniego zamówienia w WooCommerce <strong>Moje konto → Zamówienia</strong>. Gdy klient go kliknie, każda wciąż dostępna pozycja z tego zamówienia wraca do koszyka, a klient trafia na stronę koszyka lub kasy, zależnie od tego, co wybierzesz w ustawieniach.
+Reorder dodaje przycisk <strong>«Zamów ponownie»</strong> do każdego poprzedniego zamówienia w WooCommerce <strong>Moje konto > Zamówienia</strong>. Gdy klient go kliknie, każda wciąż dostępna pozycja z tego zamówienia wraca do koszyka, a klient trafia na stronę koszyka lub kasy, zależnie od tego, co wybierzesz w ustawieniach.
 
 Pozycje, których już nie ma (usunięte, ukryte lub niedostępne), są pomijane, a klient widzi powiadomienie z nazwami produktów, których nie udało się dodać, więc w koszyku nie ma cichych niespodzianek.
 
@@ -25,7 +25,7 @@ Co robi wtyczka:
 * Pomija niedostępne produkty z powiadomieniem, zamiast zostawiać klienta z uszkodzonym lub w połowie wypełnionym koszykiem.
 * Nie dodaje JavaScriptu front-endu ani dodatkowego znacznika. Przycisk to zwykła akcja zamówienia WooCommerce z małym, tematycznym arkuszem stylów (ładowanym tylko na stronie zamówień), więc wyróżnia się bez zmiany układu strony konta.
 
-Ustawienia znajdują się w <strong>WooCommerce → Reorder</strong>: zmień etykietę przycisku, wybierz, które statusy zamówień dostają przycisk (Zrealizowane, W trakcie realizacji, Wstrzymane), i zdecyduj, czy ponowne zamówienie trafia do koszyka, czy do kasy.
+Ustawienia znajdują się w <strong>WooCommerce > Reorder</strong>: zmień etykietę przycisku, wybierz, które statusy zamówień dostają przycisk (Zrealizowane, W trakcie realizacji, Wstrzymane), i zdecyduj, czy ponowne zamówienie trafia do koszyka, czy do kasy.
 
 Kod źródłowy i zgłoszenia błędów na GitHubie: https://github.com/wppoland/plogins-reorder, zgłoszenia i poprawki mile widziane.
 
@@ -34,8 +34,8 @@ Kod źródłowy i zgłoszenia błędów na GitHubie: https://github.com/wppoland
 1. Zainstaluj i włącz WooCommerce (8.0 lub nowsze).
 2. Zainstaluj Reorder z katalogu wtyczek WordPress lub prześlij folder `reorder` do `/wp-content/plugins/`.
 3. Włącz wtyczkę na ekranie <strong>Wtyczki</strong>.
-4. Opcjonalnie wejdź w <strong>WooCommerce → Reorder</strong>, aby ustawić tekst przycisku, statusy i przekierowanie; rozsądne ustawienia domyślne działają od razu.
-5. Przycisk «Zamów ponownie» pojawia się teraz przy kwalifikujących się poprzednich zamówieniach w <strong>Moje konto → Zamówienia</strong>.
+4. Opcjonalnie wejdź w <strong>WooCommerce > Reorder</strong>, aby ustawić tekst przycisku, statusy i przekierowanie; rozsądne ustawienia domyślne działają od razu.
+5. Przycisk «Zamów ponownie» pojawia się teraz przy kwalifikujących się poprzednich zamówieniach w <strong>Moje konto > Zamówienia</strong>.
 
 == Frequently Asked Questions ==
 
@@ -57,7 +57,7 @@ Tak. Reorder to rozszerzenie WooCommerce i wymaga WooCommerce 8.0 lub nowszego. 
 Są pomijane, a klient widzi powiadomienie z nazwami produktów, których nie udało się ponownie dodać. Wszystko, co wciąż można kupić, trafia do koszyka.
 
 = Which orders show the button? =
-Domyślnie zamówienia zrealizowane. Możesz też włączyć W trakcie realizacji i Wstrzymane w <strong>WooCommerce → Reorder</strong>. Przycisk widzi tylko klient będący właścicielem zamówienia.
+Domyślnie zamówienia zrealizowane. Możesz też włączyć W trakcie realizacji i Wstrzymane w <strong>WooCommerce > Reorder</strong>. Przycisk widzi tylko klient będący właścicielem zamówienia.
 
 = Does it work with product variations? =
 Tak. Oryginalna wariant jest zachowana (np. rozmiar i kolor), więc do koszyka wraca właściwa wariant.

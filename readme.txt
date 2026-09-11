@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Adds an "Order again" button to past WooCommerce orders. One click re-adds the s
 
 == Description ==
 
-Reorder adds an **"Order again"** button to each past order in WooCommerce **My Account → Orders**. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings.
+Reorder adds an **"Order again"** button to each past order in WooCommerce **My Account > Orders**. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings.
 
 Items that are gone (deleted, hidden, or out of stock) are left out, and the customer sees a notice naming what couldn't be added so there are no silent surprises in the cart.
 
@@ -25,7 +25,7 @@ What the plugin does:
 * Skips unavailable products with a notice rather than leaving the customer with a broken or half-filled cart.
 * Adds no front-end JavaScript and no extra markup. The button is a normal WooCommerce order action with a small, themeable stylesheet (loaded only on the orders page), so it stands out without shifting your account-page layout.
 
-Settings live under **WooCommerce → Reorder**: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout.
+Settings live under **WooCommerce > Reorder**: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout.
 
 Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder); issues and patches welcome.
 
@@ -34,8 +34,8 @@ Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](h
 1. Install and activate WooCommerce (8.0 or later).
 2. Install Reorder from the WordPress plugin directory, or upload the `reorder` folder to `/wp-content/plugins/`.
 3. Activate the plugin through the **Plugins** screen.
-4. Optionally visit **WooCommerce → Reorder** to set the button text, statuses, and redirect; sensible defaults work out of the box.
-5. An "Order again" button now appears on qualifying past orders in **My Account → Orders**.
+4. Optionally visit **WooCommerce > Reorder** to set the button text, statuses, and redirect; sensible defaults work out of the box.
+5. An "Order again" button now appears on qualifying past orders in **My Account > Orders**.
 
 == Frequently Asked Questions ==
 
@@ -57,7 +57,7 @@ Yes. Reorder is a WooCommerce extension and requires WooCommerce 8.0 or later. I
 They are skipped, and the customer sees a notice naming the products that could not be re-added. Everything still purchasable is added to the cart.
 
 = Which orders show the button? =
-By default, completed orders. You can enable Processing and On hold too under **WooCommerce → Reorder**. The button only shows to the customer who owns the order.
+By default, completed orders. You can enable Processing and On hold too under **WooCommerce > Reorder**. The button only shows to the customer who owns the order.
 
 = Does it work with product variations? =
 Yes. The original variation (e.g. size and colour) is preserved, so the correct variation is added back to the cart.
@@ -87,6 +87,10 @@ Reorder does not connect to any external services. It only re-adds items to the 
 Plogins Reorder is fully translatable and ships the `plogins-reorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.13 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.12 =
 * Fixed: the reorder button was unstyled on a single order view. WooCommerce 10.9 started rendering the my-account order actions there as well, and the stylesheet was still loading only on the orders list.

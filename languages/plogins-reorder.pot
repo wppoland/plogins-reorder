@@ -192,7 +192,7 @@ msgid "checkout"
 msgstr ""
 
 #: src/Admin/Settings.php:291
-msgid "In My Account → Orders"
+msgid "In My Account > Orders"
 msgstr ""
 
 #. translators: %s: the cart or checkout destination, e.g. "the cart".
