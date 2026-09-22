@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Reorder - One-Click Reorder for WooCommerce 1.0.11\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-reorder\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ripeto\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,45 +12,45 @@ msgstr ""
 "POT-Creation-Date: 2026-09-09T14:37:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-reorder\n"
+"X-Domain: ripeto\n"
 
 #. Plugin Name of the plugin
-#: plogins-reorder.php
+#: ripeto.php
 msgid "Plogins Reorder - One-Click Reorder for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-reorder.php
+#: ripeto.php
 msgid "https://plogins.com/plogins-reorder/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-reorder.php
+#: ripeto.php
 msgid "Add a one-click reorder button to past orders so customers can re-add every still-purchasable item to the cart and buy again fast."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-reorder.php
+#: ripeto.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-reorder.php
+#: ripeto.php
 msgid "https://wppoland.com"
 msgstr ""
 
 #. translators: 1: Required PHP version, 2: Current PHP version
-#: plogins-reorder.php:55
+#: ripeto.php:55
 #, php-format
 msgid "Reorder requires PHP %1$s or higher. You are running PHP %2$s."
 msgstr ""
 
-#: plogins-reorder.php:74
+#: ripeto.php:74
 msgid "Reorder requires WooCommerce to be installed and activated."
 msgstr ""
 
 #. translators: 1: Required WC version, 2: Current WC version
-#: plogins-reorder.php:86
+#: ripeto.php:86
 #, php-format
 msgid "Reorder requires WooCommerce %1$s or higher. You are running WooCommerce %2$s."
 msgstr ""

@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Reorder Pro',
+    'name'       => 'Ripeto Pro',
     'url'        => 'https://plogins.com/plogins-reorder-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
@@ -33,7 +33,7 @@ return [
             'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce > Reorder > „Nagroda za ponowne zamówienie (Pro)”.'],
         ],
         [
-            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Reorder service container; without it the add-on stays dormant.'],
+            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Ripeto service container; without it the add-on stays dormant.'],
             'pl' => ['title' => 'Buduje na darmowej wtyczce', 'desc' => 'Rozszerza kontener usług darmowego Reorder; bez niej pozostaje uśpiony.'],
         ],
     ],

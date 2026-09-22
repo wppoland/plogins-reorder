@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 /**
- * Plugin Name:       Plogins Reorder - One-Click Reorder for WooCommerce
+ * Plugin Name:       Ripeto - One-Click Reorder for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-reorder/
  * Description:        Add a one-click reorder button to past orders so customers can re-add every still-purchasable item to the cart and buy again fast.
- * Version:           1.0.13
+ * Version:           1.1.0
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Author:            WPPoland.com
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       plogins-reorder
+ * Text Domain:       ripeto
  * Domain Path:       /languages
  * Requires Plugins:  woocommerce
  *
@@ -27,7 +27,7 @@ namespace Reorder;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.13';
+const VERSION     = '1.1.0';
 const PLUGIN_FILE     = __FILE__;
 const PLUGIN_DIR      = __DIR__;
 const MIN_PHP_VERSION = '8.1.0';
@@ -52,7 +52,7 @@ if (version_compare(PHP_VERSION, MIN_PHP_VERSION, '<')) {
             '<div class="notice notice-error"><p>%s</p></div>',
             esc_html(sprintf(
                 /* translators: 1: Required PHP version, 2: Current PHP version */
-                __('Reorder requires PHP %1$s or higher. You are running PHP %2$s.', 'plogins-reorder'),
+                __('Ripeto requires PHP %1$s or higher. You are running PHP %2$s.', 'ripeto'),
                 MIN_PHP_VERSION,
                 PHP_VERSION,
             )),
@@ -71,7 +71,7 @@ add_action('plugins_loaded', static function (): void {
         add_action('admin_notices', static function (): void {
             printf(
                 '<div class="notice notice-error"><p>%s</p></div>',
-                esc_html__('Reorder requires WooCommerce to be installed and activated.', 'plogins-reorder'),
+                esc_html__('Ripeto requires WooCommerce to be installed and activated.', 'ripeto'),
             );
         });
         return;
@@ -83,7 +83,7 @@ add_action('plugins_loaded', static function (): void {
                 '<div class="notice notice-error"><p>%s</p></div>',
                 esc_html(sprintf(
                     /* translators: 1: Required WC version, 2: Current WC version */
-                    __('Reorder requires WooCommerce %1$s or higher. You are running WooCommerce %2$s.', 'plogins-reorder'),
+                    __('Ripeto requires WooCommerce %1$s or higher. You are running WooCommerce %2$s.', 'ripeto'),
                     MIN_WC_VERSION,
                     WC_VERSION,
                 )),
