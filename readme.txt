@@ -1,11 +1,11 @@
-=== Plogins Reorder - One-Click Reorder for WooCommerce ===
+=== Ripeto - One-Click Reorder for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, reorder, buy again, repeat order, order again
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.13
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Adds an "Order again" button to past WooCommerce orders. One click re-adds the s
 
 == Description ==
 
-Reorder adds an **"Order again"** button to each past order in WooCommerce **My Account > Orders**. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings.
+Ripeto adds an **"Order again"** button to each past order in WooCommerce **My Account > Orders**. When a customer clicks it, every still-purchasable item from that order goes back into the cart, and they land on the cart page or the checkout, whichever you've chosen in the settings.
 
 Items that are gone (deleted, hidden, or out of stock) are left out, and the customer sees a notice naming what couldn't be added so there are no silent surprises in the cart.
 
@@ -32,7 +32,7 @@ Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](h
 == Installation ==
 
 1. Install and activate WooCommerce (8.0 or later).
-2. Install Reorder from the WordPress plugin directory, or upload the `reorder` folder to `/wp-content/plugins/`.
+2. Install Ripeto from the WordPress plugin directory, or upload the `ripeto` folder to `/wp-content/plugins/`.
 3. Activate the plugin through the **Plugins** screen.
 4. Optionally visit **WooCommerce > Reorder** to set the button text, statuses, and redirect; sensible defaults work out of the box.
 5. An "Order again" button now appears on qualifying past orders in **My Account > Orders**.
@@ -47,11 +47,11 @@ Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](h
 * **Bug reports and feature requests**: [github.com/wppoland/plogins-reorder/issues](https://github.com/wppoland/plogins-reorder/issues)
 
 
-= Is Reorder free? =
-Yes. Reorder is free and licensed under the GPL.
+= Is Ripeto free? =
+Yes. Ripeto is free and licensed under the GPL.
 
-= Does Reorder require WooCommerce? =
-Yes. Reorder is a WooCommerce extension and requires WooCommerce 8.0 or later. It shows an admin notice and stays inactive if WooCommerce is missing or out of date.
+= Does Ripeto require WooCommerce? =
+Yes. Ripeto is a WooCommerce extension and requires WooCommerce 8.0 or later. It shows an admin notice and stays inactive if WooCommerce is missing or out of date.
 
 = What happens to items that are no longer available? =
 They are skipped, and the customer sees a notice naming the products that could not be re-added. Everything still purchasable is added to the cart.
@@ -66,7 +66,7 @@ Yes. The original variation (e.g. size and colour) is preserved, so the correct 
 To the cart by default, or straight to checkout, your choice in the settings.
 
 = How do I remove all plugin data? =
-Deleting the plugin from the **Plugins** screen runs the uninstall routine, which removes the `reorder_settings` and `reorder_db_version` options. Reorder stores no custom tables.
+Deleting the plugin from the **Plugins** screen runs the uninstall routine, which removes the `reorder_settings` and `reorder_db_version` options. Ripeto stores no custom tables.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -75,7 +75,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Reorder does not connect to any external services. It only re-adds items to the standard WooCommerce cart on your own site.
+Ripeto does not connect to any external services. It only re-adds items to the standard WooCommerce cart on your own site.
 
 == Screenshots ==
 
@@ -84,9 +84,12 @@ Reorder does not connect to any external services. It only re-adds items to the 
 
 == Translations ==
 
-Plogins Reorder is fully translatable and ships the `plogins-reorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Ripeto is fully translatable and ships the `ripeto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Ripeto. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Ripeto is Esperanto for a repetition. The text domain follows the name; the stored settings, the "Order again" button and every hook are unchanged.
 
 = 1.0.13 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
