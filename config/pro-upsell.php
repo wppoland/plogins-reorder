@@ -16,7 +16,7 @@ return [
     'price_from' => 29,
     'currency'   => 'EUR',
     'lead'       => [
-        'en' => 'Reorder reward coupon. Feature-complete PRO.',
+        'en' => 'Ripeto reward coupon. Feature-complete PRO.',
         'pl' => 'Kupon nagrody za ponowne zamówienie. Kompletna wersja PRO.',
     ],
     'features'   => [
@@ -33,8 +33,8 @@ return [
             'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce > Reorder > „Nagroda za ponowne zamówienie (Pro)”.'],
         ],
         [
-            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Reorder service container; without it the add-on stays dormant.'],
-            'pl' => ['title' => 'Buduje na darmowej wtyczce', 'desc' => 'Rozszerza kontener usług darmowego Reorder; bez niej pozostaje uśpiony.'],
+            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Ripeto service container; without it the add-on stays dormant.'],
+            'pl' => ['title' => 'Buduje na darmowej wtyczce', 'desc' => 'Rozszerza kontener usług darmowego Ripeto; bez niej pozostaje uśpiony.'],
         ],
     ],
 ];
