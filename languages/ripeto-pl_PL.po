@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: ripeto.php
 msgid "Plogins Reorder - One-Click Reorder for WooCommerce"
-msgstr ""
+msgstr "Plogins Reorder - Ponowne zamówienie jednym kliknięciem dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: ripeto.php
 msgid "https://plogins.com/plogins-reorder/"
-msgstr ""
+msgstr "https://plogins.com/plogins-reorder/"
 
 #. Description of the plugin
 #: ripeto.php
@@ -40,7 +40,7 @@ msgstr ""
 #. Author of the plugin
 #: ripeto.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: ripeto.php
