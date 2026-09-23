@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Reorder - Quick Reorder for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/reorder\n"
-"POT-Creation-Date: 2026-06-16T20:23:56+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ripeto\n"
+"POT-Creation-Date: 2026-09-09T14:37:59+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: reorder.php
-msgid "Reorder - Quick Reorder for WooCommerce"
-msgstr "Nachbestellung, Schnelle Nachbestellung für WooCommerce"
+#: ripeto.php
+msgid "Plogins Reorder - One-Click Reorder for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
-#: reorder.php
-msgid "https://plogins.com/reorder/"
-msgstr "https://plogins.com/de/reorder/"
+#: ripeto.php
+msgid "https://plogins.com/plogins-reorder/"
+msgstr ""
 
 #. Description of the plugin
-#: reorder.php
+#: ripeto.php
 msgid ""
 "Add a one-click reorder button to past orders so customers can re-add every "
 "still-purchasable item to the cart and buy again fast."
@@ -37,29 +37,29 @@ msgstr ""
 "Warenkorb legen und schnell erneut kaufen können."
 
 #. Author of the plugin
-#: reorder.php
-msgid "WPPoland"
-msgstr "WPPoland"
+#: ripeto.php
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
-#: reorder.php
+#: ripeto.php
 msgid "https://wppoland.com"
 msgstr "https://wppoland.com"
 
 #. translators: 1: Required PHP version, 2: Current PHP version
-#: reorder.php:56
+#: ripeto.php:55
 #, php-format
 msgid "Reorder requires PHP %1$s or higher. You are running PHP %2$s."
 msgstr ""
 "Für die Neubestellung ist PHP %1$s oder höher erforderlich. Du verwendest "
 "PHP %2$s."
 
-#: reorder.php:75
+#: ripeto.php:74
 msgid "Reorder requires WooCommerce to be installed and activated."
 msgstr "Für die Neubestellung muss WooCommerce installiert und aktiviert sein."
 
 #. translators: 1: Required WC version, 2: Current WC version
-#: reorder.php:87
+#: ripeto.php:86
 #, php-format
 msgid ""
 "Reorder requires WooCommerce %1$s or higher. You are running WooCommerce "
@@ -68,23 +68,77 @@ msgstr ""
 "Für die Nachbestellung ist WooCommerce %1$s oder höher erforderlich. Du "
 "betreibst WooCommerce %2$s."
 
-#: src/Admin/Settings.php:42
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
+
+#: src/Admin/Settings.php:50
 msgid "Reorder Settings"
 msgstr "Einstellungen neu anordnen"
 
-#: src/Admin/Settings.php:43
+#: src/Admin/Settings.php:51
 msgid "Reorder"
 msgstr "Neu anordnen"
 
-#: src/Admin/Settings.php:63
+#: src/Admin/Settings.php:71
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: src/Admin/Settings.php:85
+#: src/Admin/Settings.php:93
 msgid "The button"
 msgstr "Der Knopf"
 
-#: src/Admin/Settings.php:87
+#: src/Admin/Settings.php:95
 msgid ""
 "Set what the reorder button says and where it takes the customer. The "
 "preview shows exactly what they will see in My Account."
@@ -93,16 +147,16 @@ msgstr ""
 "Kunden führt. Die Vorschau zeigt genau das, was sie in „Mein Konto“ sehen "
 "werden."
 
-#: src/Admin/Settings.php:94
+#: src/Admin/Settings.php:102
 msgid "Button text"
 msgstr "Schaltflächentext"
 
-#: src/Admin/Settings.php:100 src/Admin/Settings.php:270
+#: src/Admin/Settings.php:109 src/Admin/Settings.php:284
 #: src/Settings/SettingsRepository.php:58
 msgid "Order again"
 msgstr "Bestelle erneut"
 
-#: src/Admin/Settings.php:101
+#: src/Admin/Settings.php:110
 msgid ""
 "Label shown on the reorder button in My Account. An action phrase such as "
 "\"Order again\" or \"Buy these again\" works well. Leave blank to use the "
@@ -113,11 +167,11 @@ msgstr ""
 "kaufen“ funktioniert gut. Lass das Feld leer, um die Standardeinstellung zu "
 "verwenden."
 
-#: src/Admin/Settings.php:107
+#: src/Admin/Settings.php:116
 msgid "After reordering"
 msgstr "Nach Neubestellung"
 
-#: src/Admin/Settings.php:113
+#: src/Admin/Settings.php:122
 msgid ""
 "Where to send the customer once their items are back in the cart. Send "
 "straight to checkout for the fastest repeat purchase, or to the cart so they "
@@ -128,25 +182,25 @@ msgstr ""
 "Kasse oder an den Warenkorb, damit deine Kunden es zuerst überprüfen und "
 "anpassen können."
 
-#: src/Admin/Settings.php:119
+#: src/Admin/Settings.php:128
 msgid "Preview"
 msgstr "Vorschau"
 
-#: src/Admin/Settings.php:129
+#: src/Admin/Settings.php:138
 msgid "Where it appears"
 msgstr "Wo es erscheint"
 
-#: src/Admin/Settings.php:131
+#: src/Admin/Settings.php:140
 msgid "Choose which past orders show a reorder button."
 msgstr ""
 "Wähle aus, bei welchen früheren Bestellungen eine Schaltfläche zum "
 "Nachbestellen angezeigt wird."
 
-#: src/Admin/Settings.php:138
+#: src/Admin/Settings.php:147
 msgid "Order statuses"
 msgstr "Bestellstatus"
 
-#: src/Admin/Settings.php:144
+#: src/Admin/Settings.php:153
 msgid ""
 "The button only appears on orders with one of the ticked statuses. "
 "\"Completed\" is the usual choice; add \"Processing\" if you want customers "
@@ -157,7 +211,7 @@ msgstr ""
 "wenn du möchten, dass Kunden vor der Ausführung eine Nachbestellung "
 "durchführen."
 
-#: src/Admin/Settings.php:158
+#: src/Admin/Settings.php:170
 msgid ""
 "Add a one-click reorder button to past orders so customers can buy the same "
 "items again in seconds."
@@ -166,48 +220,48 @@ msgstr ""
 "Klick hinzu, damit Kunden dieselben Artikel in Sekundenschnelle erneut "
 "kaufen können."
 
-#: src/Admin/Settings.php:212
+#: src/Admin/Settings.php:226
 msgid "Go to the cart"
 msgstr "Gehe zum Warenkorb"
 
-#: src/Admin/Settings.php:213
+#: src/Admin/Settings.php:227
 msgid "Go straight to checkout"
 msgstr "Gehe direkt zur Kasse"
 
-#: src/Admin/Settings.php:264
+#: src/Admin/Settings.php:278
 msgid "the cart"
 msgstr "der Einkaufswagen"
 
-#: src/Admin/Settings.php:265
+#: src/Admin/Settings.php:279
 msgid "checkout"
 msgstr "Kasse"
 
-#: src/Admin/Settings.php:277
+#: src/Admin/Settings.php:291
 msgid "In My Account > Orders"
 msgstr "In Mein Konto > Bestellungen"
 
 #. translators: %s: the cart or checkout destination, e.g. "the cart".
-#: src/Admin/Settings.php:287
+#: src/Admin/Settings.php:301
 #, php-format
 msgid "After clicking, the order is re-added and the customer is taken to %s."
 msgstr ""
 "Nach dem Klicken wird die Bestellung erneut hinzugefügt und der Kunde wird "
 "zu %s weitergeleitet."
 
-#: src/Service/ReorderService.php:77
+#: src/Service/ReorderService.php:84
 msgid "That reorder link has expired. Please try again."
 msgstr "Dieser Nachbestellungslink ist abgelaufen. Bitte versuche es erneut."
 
-#: src/Service/ReorderService.php:92
+#: src/Service/ReorderService.php:99
 msgid "We could not find that order."
 msgstr "Wir konnten diese Bestellung nicht finden."
 
-#: src/Service/ReorderService.php:108
+#: src/Service/ReorderService.php:115
 msgid "The cart is not available right now. Please try again."
 msgstr "Der Warenkorb ist derzeit nicht verfügbar. Bitte versuche es erneut."
 
 #. translators: %d: number of items added back to the cart.
-#: src/Service/ReorderService.php:183
+#: src/Service/ReorderService.php:190
 #, php-format
 msgid "%d item from your order was added back to the cart."
 msgid_plural "%d items from your order were added back to the cart."
@@ -217,73 +271,26 @@ msgstr[1] ""
 "%d Artikel aus deiner Bestellung wurden wieder zum Warenkorb hinzugefügt."
 
 #. translators: %s: comma-separated list of product names that could not be re-added.
-#: src/Service/ReorderService.php:194
+#: src/Service/ReorderService.php:201
 #, php-format
 msgid "These items are no longer available and were skipped: %s"
 msgstr "Diese Artikel sind nicht mehr verfügbar und wurden übersprungen: %s"
 
-#: src/Service/ReorderService.php:202
+#: src/Service/ReorderService.php:209
 msgid "There was nothing from that order to add to the cart."
 msgstr ""
 "Es gab nichts von dieser Bestellung, das in den Warenkorb gelegt werden "
 "konnte."
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Demnächst"
+#~ msgid "Reorder - Quick Reorder for WooCommerce"
+#~ msgstr "Nachbestellung, Schnelle Nachbestellung für WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Demnächst"
+#~ msgid "https://plogins.com/reorder/"
+#~ msgstr "https://plogins.com/de/reorder/"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "ab %d zł/Jahr"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "ab %1$s%2$d/Jahr"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Auf PRO upgraden"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Zugriff verweigert."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Mehr erreichen mit %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Diesen Hinweis ausblenden"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Alle PRO-Funktionen freischalten"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "eine Lizenz, alle PRO-Funktionen"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Was %s ergänzt"
+#~ msgid "od %d zł/rok"
+#~ msgstr "ab %d zł/Jahr"
