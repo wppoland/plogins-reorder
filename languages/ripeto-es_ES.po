@@ -97,7 +97,7 @@ msgstr "Texto del botón"
 #: src/Admin/Settings.php:100 src/Admin/Settings.php:270
 #: src/Settings/SettingsRepository.php:58
 msgid "Order again"
-msgstr "Ordene nuevamente"
+msgstr "Ordena de nuevo"
 
 #: src/Admin/Settings.php:101
 msgid ""
@@ -106,8 +106,8 @@ msgid ""
 "default."
 msgstr ""
 "Etiqueta que se muestra en el botón de reordenar en Mi cuenta. Una frase de "
-"acción como \"Ordene de nuevo\" o \"Cómprelos de nuevo\" funciona bien. "
-"Déjelo en blanco para usar el valor predeterminado."
+"acción como \"Ordena de nuevo\" o \"Cómpralos de nuevo\" funciona bien. "
+"Déjalo en blanco para usar el valor predeterminado."
 
 #: src/Admin/Settings.php:107
 msgid "After reordering"
@@ -120,7 +120,7 @@ msgid ""
 "can review and adjust first."
 msgstr ""
 "Dónde enviar al cliente una vez que sus artículos estén nuevamente en el "
-"carrito. Envíelo directamente a la caja para repetir la compra más "
+"carrito. Envíalo directamente a la caja para repetir la compra más "
 "rápidamente, o al carrito para que puedan revisarlo y ajustarlo primero."
 
 #: src/Admin/Settings.php:119
@@ -133,7 +133,7 @@ msgstr "donde aparece"
 
 #: src/Admin/Settings.php:131
 msgid "Choose which past orders show a reorder button."
-msgstr "Elija qué pedidos anteriores muestran un botón para reordenar."
+msgstr "Elige qué pedidos anteriores muestran un botón para reordenar."
 
 #: src/Admin/Settings.php:138
 msgid "Order statuses"
@@ -146,7 +146,7 @@ msgid ""
 "to reorder before fulfilment."
 msgstr ""
 "El botón sólo aparece en pedidos con uno de los estados marcados. "
-"\"Completado\" es la opción habitual; añade \"Procesamiento\" si desea que "
+"\"Completado\" es la opción habitual; añade \"Procesamiento\" si quieres que "
 "los clientes vuelvan a realizar pedidos antes del cumplimiento."
 
 #: src/Admin/Settings.php:158
@@ -203,8 +203,8 @@ msgstr ""
 #, php-format
 msgid "%d item from your order was added back to the cart."
 msgid_plural "%d items from your order were added back to the cart."
-msgstr[0] "%d artículo de su pedido se volvió a añadir al carrito."
-msgstr[1] "%d artículos de su pedido se agregaron nuevamente al carrito."
+msgstr[0] "%d artículo de tu pedido se volvió a añadir al carrito."
+msgstr[1] "%d artículos de tu pedido se agregaron nuevamente al carrito."
 
 #. translators: %s: comma-separated list of product names that could not be re-added.
 #: src/Service/ReorderService.php:194
