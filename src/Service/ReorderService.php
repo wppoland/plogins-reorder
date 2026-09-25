@@ -71,18 +71,23 @@ final class ReorderService implements HasHooks
      */
     public function handleRequest(): void
     {
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce is verified below before any state change.
-        if (! isset($_GET[self::QUERY_VAR], $_GET['action']) || sanitize_key(wp_unslash($_GET['action'])) !== self::ACTION) {
+        if (! isset($_GET[self::QUERY_VAR])) {
             return;
         }
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Cast/validated immediately; nonce checked next.
-        $orderId = absint(wp_unslash($_GET[self::QUERY_VAR]));
         $nonce   = isset($_GET['_wpnonce']) ? sanitize_text_field(wp_unslash($_GET['_wpnonce'])) : '';
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- the nonce action is bound to the order ID, so the ID is read to build it; nothing is done with it before the check below.
+        $orderId = absint(wp_unslash($_GET[self::QUERY_VAR]));
 
         if ($orderId <= 0 || ! wp_verify_nonce($nonce, self::ACTION . '_' . $orderId)) {
             wc_add_notice(__('That reorder link has expired. Please try again.', 'ripeto'), 'error');
             $this->redirect(wc_get_account_endpoint_url('orders'));
+        }
+
+        $action = isset($_GET['action']) ? sanitize_key(wp_unslash($_GET['action'])) : '';
+
+        if (self::ACTION !== $action) {
+            return;
         }
 
         if (! is_user_logged_in()) {
