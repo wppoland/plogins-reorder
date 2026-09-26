@@ -31,7 +31,7 @@ final class ReorderService implements HasHooks
 
     public function registerHooks(): void
     {
-        // Button in the My Account → Orders list (one row per order).
+        // Button in the My Account > Orders list (one row per order).
         add_filter('woocommerce_my_account_my_orders_actions', [$this, 'addListAction'], 10, 2);
 
         // Handle the reorder request early, before output, so we can redirect.
@@ -47,6 +47,13 @@ final class ReorderService implements HasHooks
      */
     public function addListAction(array $actions, $order): array
     {
+        // WooCommerce 10.9 started feeding this filter into order-details.php,
+        // which also renders the order-received screen. "Order again" makes no
+        // sense on the page confirming the order that was just placed.
+        if (function_exists('is_order_received_page') && is_order_received_page()) {
+            return $actions;
+        }
+
         if (! $order instanceof WC_Order || ! $this->orderQualifies($order)) {
             return $actions;
         }
@@ -64,18 +71,23 @@ final class ReorderService implements HasHooks
      */
     public function handleRequest(): void
     {
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce is verified below before any state change.
-        if (! isset($_GET[self::QUERY_VAR], $_GET['action']) || sanitize_key(wp_unslash($_GET['action'])) !== self::ACTION) {
+        if (! isset($_GET[self::QUERY_VAR])) {
             return;
         }
 
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Cast/validated immediately; nonce checked next.
-        $orderId = absint(wp_unslash($_GET[self::QUERY_VAR]));
         $nonce   = isset($_GET['_wpnonce']) ? sanitize_text_field(wp_unslash($_GET['_wpnonce'])) : '';
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- the nonce action is bound to the order ID, so the ID is read to build it; nothing is done with it before the check below.
+        $orderId = absint(wp_unslash($_GET[self::QUERY_VAR]));
 
         if ($orderId <= 0 || ! wp_verify_nonce($nonce, self::ACTION . '_' . $orderId)) {
-            wc_add_notice(__('That reorder link has expired. Please try again.', 'plogins-reorder'), 'error');
+            wc_add_notice(__('That reorder link has expired. Please try again.', 'ripeto'), 'error');
             $this->redirect(wc_get_account_endpoint_url('orders'));
+        }
+
+        $action = isset($_GET['action']) ? sanitize_key(wp_unslash($_GET['action'])) : '';
+
+        if (self::ACTION !== $action) {
+            return;
         }
 
         if (! is_user_logged_in()) {
@@ -89,7 +101,7 @@ final class ReorderService implements HasHooks
             || $order->get_customer_id() !== get_current_user_id()
             || ! $this->orderQualifies($order)
         ) {
-            wc_add_notice(__('We could not find that order.', 'plogins-reorder'), 'error');
+            wc_add_notice(__('We could not find that order.', 'ripeto'), 'error');
             $this->redirect(wc_get_account_endpoint_url('orders'));
         }
 
@@ -105,7 +117,7 @@ final class ReorderService implements HasHooks
     private function refill(WC_Order $order): void
     {
         if (! function_exists('WC') || WC()->cart === null) {
-            wc_add_notice(__('The cart is not available right now. Please try again.', 'plogins-reorder'), 'error');
+            wc_add_notice(__('The cart is not available right now. Please try again.', 'ripeto'), 'error');
 
             return;
         }
@@ -158,7 +170,7 @@ final class ReorderService implements HasHooks
         /**
          * Fires after a reorder has re-added the order's items to the cart.
          *
-         * Add-ons (e.g. Reorder Pro) hook this to react to a completed reorder, 
+         * Add-ons (e.g. Ripeto Pro) hook this to react to a completed reorder, 
          * for example, applying a reward coupon to the cart.
          *
          * @param WC_Order     $order   The order that was reordered.
@@ -180,7 +192,7 @@ final class ReorderService implements HasHooks
             wc_add_notice(
                 sprintf(
                     /* translators: %d: number of items added back to the cart. */
-                    _n('%d item from your order was added back to the cart.', '%d items from your order were added back to the cart.', $added, 'plogins-reorder'),
+                    _n('%d item from your order was added back to the cart.', '%d items from your order were added back to the cart.', $added, 'ripeto'),
                     $added,
                 ),
                 'success',
@@ -191,7 +203,7 @@ final class ReorderService implements HasHooks
             wc_add_notice(
                 sprintf(
                     /* translators: %s: comma-separated list of product names that could not be re-added. */
-                    __('These items are no longer available and were skipped: %s', 'plogins-reorder'),
+                    __('These items are no longer available and were skipped: %s', 'ripeto'),
                     implode(', ', array_map('sanitize_text_field', $skipped)),
                 ),
                 'notice',
@@ -199,7 +211,7 @@ final class ReorderService implements HasHooks
         }
 
         if ($added === 0 && $skipped === []) {
-            wc_add_notice(__('There was nothing from that order to add to the cart.', 'plogins-reorder'), 'notice');
+            wc_add_notice(__('There was nothing from that order to add to the cart.', 'ripeto'), 'notice');
         }
     }
 

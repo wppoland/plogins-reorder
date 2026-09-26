@@ -1,6 +1,6 @@
 /* ==========================================================================
    Reorder, Storefront
-   The "Order again" action in My Account → Orders. Among a row of one-item
+   The "Order again" action in My Account > Orders. Among a row of one-item
    glances (View, Pay, Cancel), this is the one that gathers a whole order
    back up, so it carries Reorder's own mark: a refill loop that closes on
    intent, and a warm amber fill that tops the basket back up behind the label.

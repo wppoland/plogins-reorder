@@ -17,7 +17,7 @@ final class Assets implements HasHooks
 {
     private const HANDLE = 'reorder-admin';
 
-    /** Hook suffix of the Reorder settings page (`admin_enqueue_scripts` arg). */
+    /** Hook suffix of the Ripeto settings page (`admin_enqueue_scripts` arg). */
     private const PAGE_HOOK = 'woocommerce_page_reorder-settings';
 
     public function registerHooks(): void
