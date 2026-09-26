@@ -76,7 +76,7 @@ final class Plugin
 
         /**
          * Fires after the plugin has fully booted and all services have
-         * registered their hooks. Add-ons (e.g. Reorder Pro) extend the shared
+         * registered their hooks. Add-ons (e.g. Ripeto Pro) extend the shared
          * container and register their own hooks from here.
          *
          * @param Plugin $plugin The booted plugin instance.

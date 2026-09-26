@@ -10,14 +10,13 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Reorder Pro',
+    'name'       => 'Ripeto Pro',
     'url'        => 'https://plogins.com/plogins-reorder-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
     'currency'   => 'EUR',
-    'price_pln'  => 129,
     'lead'       => [
-        'en' => 'Reorder reward coupon. Feature-complete PRO.',
+        'en' => 'Ripeto reward coupon. Feature-complete PRO.',
         'pl' => 'Kupon nagrody za ponowne zamówienie. Kompletna wersja PRO.',
     ],
     'features'   => [
@@ -30,12 +29,12 @@ return [
             'pl' => ['title' => 'Odporny na błędne kody', 'desc' => 'Nieprawidłowe lub wygasłe kody są pomijane po cichu, więc koszyk nigdy się nie psuje.'],
         ],
         [
-            'en' => ['title' => 'Reward settings', 'desc' => 'Configure the coupon under WooCommerce → Reorder → "Reorder reward (Pro)".'],
-            'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce → Reorder → „Nagroda za ponowne zamówienie (Pro)”.'],
+            'en' => ['title' => 'Reward settings', 'desc' => 'Configure the coupon under WooCommerce > Reorder > "Reorder reward (Pro)".'],
+            'pl' => ['title' => 'Ustawienia nagrody', 'desc' => 'Skonfiguruj kupon w WooCommerce > Reorder > „Nagroda za ponowne zamówienie (Pro)”.'],
         ],
         [
-            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Reorder service container; without it the add-on stays dormant.'],
-            'pl' => ['title' => 'Buduje na darmowej wtyczce', 'desc' => 'Rozszerza kontener usług darmowego Reorder; bez niej pozostaje uśpiony.'],
+            'en' => ['title' => 'Builds on the free plugin', 'desc' => 'Extends the free Ripeto service container; without it the add-on stays dormant.'],
+            'pl' => ['title' => 'Buduje na darmowej wtyczce', 'desc' => 'Rozszerza kontener usług darmowego Ripeto; bez niej pozostaje uśpiony.'],
         ],
     ],
 ];

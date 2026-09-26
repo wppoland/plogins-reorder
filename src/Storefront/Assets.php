@@ -11,7 +11,7 @@ use Reorder\Plugin;
 
 /**
  * Enqueues the storefront stylesheet that gives the "Order again" action its
- * own mark, but only on the My Account → Orders page where the button lives,
+ * own mark, but only on the My Account > Orders page where the button lives,
  * so nothing is loaded on the rest of the store.
  *
  * CSS only: the plugin adds no front-end JavaScript and no extra markup. The
@@ -28,12 +28,17 @@ final class Assets implements HasHooks
 
     public function enqueue(): void
     {
-        // Only on the account "orders" list, where the reorder button renders.
         if (! function_exists('is_account_page') || ! is_account_page()) {
             return;
         }
 
-        if (function_exists('is_wc_endpoint_url') && ! is_wc_endpoint_url('orders')) {
+        // Both endpoints, not just the list. WooCommerce 10.9 started feeding
+        // woocommerce_my_account_my_orders_actions into order-details.php, so
+        // the button also renders on a single order view. Scoped to "orders"
+        // alone, that button arrived unstyled.
+        if (function_exists('is_wc_endpoint_url')
+            && ! is_wc_endpoint_url('orders')
+            && ! is_wc_endpoint_url('view-order')) {
             return;
         }
 
