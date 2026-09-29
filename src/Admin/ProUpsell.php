@@ -82,7 +82,7 @@ final class ProUpsell
     private function priceLabel(): string
     {
         if (! $this->sellable()) {
-            return $this->isPolish() ? __('Wkrótce', 'ripeto') : __('Coming soon', 'ripeto');
+            return __('Coming soon', 'ripeto');
         }
         $d = $this->data();
         if (! empty($d['price_from'])) {
@@ -98,7 +98,7 @@ final class ProUpsell
     {
         return $this->sellable()
             ? __('Upgrade to PRO', 'ripeto')
-            : ($this->isPolish() ? __('Powiadom mnie', 'ripeto') : __('Get notified', 'ripeto'));
+            : __('Get notified', 'ripeto');
     }
 
     /** @return array<int, array{title: string, desc: string}> */
