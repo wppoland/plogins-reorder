@@ -60,9 +60,11 @@ msgstr "Ripeto erfordert, dass WooCommerce installiert und aktiviert ist."
 #: ripeto.php:86
 #, php-format
 msgid ""
-"Ripeto requires WooCommerce %1$s or higher. You are running WooCommerce %2$s."
+"Ripeto requires WooCommerce %1$s or higher. You are running WooCommerce "
+"%2$s."
 msgstr ""
-"Ripeto erfordert WooCommerce %1$s oder höher. Du verwendest WooCommerce %2$s."
+"Ripeto erfordert WooCommerce %1$s oder höher. Du verwendest WooCommerce "
+"%2$s."
 
 #: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
@@ -116,7 +118,7 @@ msgstr "Ripeto: Nachbestellung mit einem Klick"
 
 #: src/Admin/Settings.php:51
 msgid "Reorder"
-msgstr "Neu anordnen"
+msgstr "Erneut bestellen"
 
 #: src/Admin/Settings.php:71
 msgid "Settings"
@@ -128,8 +130,8 @@ msgstr "Der Knopf"
 
 #: src/Admin/Settings.php:104
 msgid ""
-"Set what the reorder button says and where it takes the customer. The preview"
-" shows exactly what they will see in My Account."
+"Set what the reorder button says and where it takes the customer. The "
+"preview shows exactly what they will see in My Account."
 msgstr ""
 "Lege fest, was auf der Nachbestellungsschaltfläche steht und wohin sie den "
 "Kunden führt. Die Vorschau zeigt genau das, was sie in „Mein Konto“ sehen "
@@ -162,8 +164,8 @@ msgstr "Nach Neubestellung"
 #: src/Admin/Settings.php:131
 msgid ""
 "Where to send the customer once their items are back in the cart. Send "
-"straight to checkout for the fastest repeat purchase, or to the cart so they "
-"can review and adjust first."
+"straight to checkout for the fastest repeat purchase, or to the cart so they"
+" can review and adjust first."
 msgstr ""
 "Wohin soll der Kunde geschickt werden, sobald seine Artikel wieder im "
 "Warenkorb sind? Für den schnellsten Wiederholungskauf sende es direkt zur "
@@ -205,8 +207,8 @@ msgid ""
 "items again in seconds."
 msgstr ""
 "Füge früheren Bestellungen eine Schaltfläche zum Nachbestellen mit einem "
-"Klick hinzu, damit Kunden dieselben Artikel in Sekundenschnelle erneut kaufen"
-" können."
+"Klick hinzu, damit Kunden dieselben Artikel in Sekundenschnelle erneut "
+"kaufen können."
 
 #: src/Admin/Settings.php:235
 msgid "Go to the cart"
@@ -233,8 +235,8 @@ msgstr "In Mein Konto > Bestellungen"
 #, php-format
 msgid "After clicking, the order is re-added and the customer is taken to %s."
 msgstr ""
-"Nach dem Klicken wird die Bestellung erneut hinzugefügt und der Kunde wird zu"
-" %s weitergeleitet."
+"Nach dem Klicken wird die Bestellung erneut hinzugefügt und der Kunde wird "
+"zu %s weitergeleitet."
 
 #: src/Service/ReorderService.php:83
 msgid "That reorder link has expired. Please try again."
@@ -258,7 +260,8 @@ msgstr[0] ""
 msgstr[1] ""
 "%d Artikel aus deiner Bestellung wurden wieder zum Warenkorb hinzugefügt."
 
-#. translators: %s: comma-separated list of product names that could not be re-
+#. translators: %s: comma-separated list of product names that could not be
+#. re-
 #. added.
 #: src/Service/ReorderService.php:206
 #, php-format
