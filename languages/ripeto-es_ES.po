@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: ripeto.php
 msgid "Ripeto - One-Click Reorder for WooCommerce"
-msgstr "Ripeto - Reordenar rápido para WooCommerce"
+msgstr "Ripeto - Volver a pedir rápido para WooCommerce"
 
 #. Plugin URI of the plugin
 #: ripeto.php
@@ -32,9 +32,9 @@ msgid ""
 "Add a one-click reorder button to past orders so customers can re-add every "
 "still-purchasable item to the cart and buy again fast."
 msgstr ""
-"Añade un botón para reordenar con un solo clic a pedidos anteriores para que "
-"los clientes puedan volver a añadir al carrito todos los artículos que aún se"
-" pueden comprar y volver a comprar rápidamente."
+"Añade un botón para volver a pedir con un solo clic a pedidos anteriores "
+"para que los clientes puedan volver a añadir al carrito todos los artículos "
+"que aún se pueden comprar y volver a comprar rápidamente."
 
 #. Author of the plugin
 #: ripeto.php
@@ -60,7 +60,8 @@ msgstr "Ripeto requiere que WooCommerce esté instalado y activado."
 #: ripeto.php:86
 #, php-format
 msgid ""
-"Ripeto requires WooCommerce %1$s or higher. You are running WooCommerce %2$s."
+"Ripeto requires WooCommerce %1$s or higher. You are running WooCommerce "
+"%2$s."
 msgstr ""
 "Ripeto requiere WooCommerce %1$s o superior. Estás usando WooCommerce %2$s."
 
@@ -112,11 +113,11 @@ msgstr "Lo que añade %s"
 
 #: src/Admin/Settings.php:50
 msgid "Ripeto: one-click reorder"
-msgstr "Ripeto: reordenar con un clic"
+msgstr "Ripeto: volver a pedir con un clic"
 
 #: src/Admin/Settings.php:51
 msgid "Reorder"
-msgstr "Reordenar"
+msgstr "Volver a pedir"
 
 #: src/Admin/Settings.php:71
 msgid "Settings"
@@ -128,11 +129,11 @@ msgstr "el botón"
 
 #: src/Admin/Settings.php:104
 msgid ""
-"Set what the reorder button says and where it takes the customer. The preview"
-" shows exactly what they will see in My Account."
+"Set what the reorder button says and where it takes the customer. The "
+"preview shows exactly what they will see in My Account."
 msgstr ""
-"Establece lo que dice el botón de reordenar y adónde lleva al cliente. La "
-"vista previa muestra exactamente lo que verán en Mi cuenta."
+"Establece lo que dice el botón de volver a pedir y adónde lleva al cliente. "
+"La vista previa muestra exactamente lo que verán en Mi cuenta."
 
 #: src/Admin/Settings.php:111
 msgid "Button text"
@@ -149,19 +150,19 @@ msgid ""
 "\"Order again\" or \"Buy these again\" works well. Leave blank to use the "
 "default."
 msgstr ""
-"Etiqueta que se muestra en el botón de reordenar en Mi cuenta. Una frase de "
-"acción como \"Ordena de nuevo\" o \"Cómpralos de nuevo\" funciona bien. "
-"Déjalo en blanco para usar el valor predeterminado."
+"Etiqueta que se muestra en el botón de volver a pedir en Mi cuenta. Una "
+"frase de acción como \"Ordena de nuevo\" o \"Cómpralos de nuevo\" funciona "
+"bien. Déjalo en blanco para usar el valor predeterminado."
 
 #: src/Admin/Settings.php:125
 msgid "After reordering"
-msgstr "Después de reordenar"
+msgstr "Después de volver a pedir"
 
 #: src/Admin/Settings.php:131
 msgid ""
 "Where to send the customer once their items are back in the cart. Send "
-"straight to checkout for the fastest repeat purchase, or to the cart so they "
-"can review and adjust first."
+"straight to checkout for the fastest repeat purchase, or to the cart so they"
+" can review and adjust first."
 msgstr ""
 "Dónde enviar al cliente una vez que sus artículos estén nuevamente en el "
 "carrito. Envíalo directamente a la caja para repetir la compra más "
@@ -177,7 +178,7 @@ msgstr "donde aparece"
 
 #: src/Admin/Settings.php:149
 msgid "Choose which past orders show a reorder button."
-msgstr "Elige qué pedidos anteriores muestran un botón para reordenar."
+msgstr "Elige qué pedidos anteriores muestran un botón para volver a pedir."
 
 #: src/Admin/Settings.php:156
 msgid "Order statuses"
@@ -190,16 +191,17 @@ msgid ""
 "to reorder before fulfilment."
 msgstr ""
 "El botón sólo aparece en pedidos con uno de los estados marcados. "
-"\"Completado\" es la opción habitual; añade \"Procesamiento\" si quieres que "
-"los clientes vuelvan a realizar pedidos antes del cumplimiento."
+"\"Completado\" es la opción habitual; añade \"Procesamiento\" si quieres que"
+" los clientes vuelvan a realizar pedidos antes del cumplimiento."
 
 #: src/Admin/Settings.php:179
 msgid ""
 "Add a one-click reorder button to past orders so customers can buy the same "
 "items again in seconds."
 msgstr ""
-"Añade un botón para reordenar con un solo clic a pedidos anteriores para que "
-"los clientes puedan volver a comprar los mismos artículos en segundos."
+"Añade un botón para volver a pedir con un solo clic a pedidos anteriores "
+"para que los clientes puedan volver a comprar los mismos artículos en "
+"segundos."
 
 #: src/Admin/Settings.php:235
 msgid "Go to the cart"
@@ -226,8 +228,8 @@ msgstr "En Mi Cuenta > Pedidos"
 #, php-format
 msgid "After clicking, the order is re-added and the customer is taken to %s."
 msgstr ""
-"Después de hacer clic, el pedido se vuelve a añadir y el cliente es llevado a"
-" %s."
+"Después de hacer clic, el pedido se vuelve a añadir y el cliente es llevado "
+"a %s."
 
 #: src/Service/ReorderService.php:83
 msgid "That reorder link has expired. Please try again."
@@ -250,7 +252,8 @@ msgid_plural "%d items from your order were added back to the cart."
 msgstr[0] "%d artículo de tu pedido se volvió a añadir al carrito."
 msgstr[1] "%d artículos de tu pedido se agregaron nuevamente al carrito."
 
-#. translators: %s: comma-separated list of product names that could not be re-
+#. translators: %s: comma-separated list of product names that could not be
+#. re-
 #. added.
 #: src/Service/ReorderService.php:206
 #, php-format
