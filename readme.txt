@@ -29,6 +29,31 @@ Settings live under **WooCommerce > Reorder**: change the button label, pick whi
 
 Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder); issues and patches welcome.
 
+== Ripeto Pro ==
+
+Ripeto Pro is a separate paid plugin that extends Ripeto.
+
+Included in Ripeto:
+
+* Order again button
+* Re-add the whole order
+* Skip missing items
+* Variation aware
+* Safe by design
+
+Ripeto Pro adds:
+
+* Reward coupon
+* Resilient to bad codes
+* Reward settings
+* Builds on the free plugin
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Ripeto Pro** - [plogins.com/plogins-reorder-pro/](https://plogins.com/plogins-reorder-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-reorder-pro/pricing/](https://plogins.com/plogins-reorder-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-reorder-pro/docs/](https://plogins.com/plogins-reorder-pro/docs/)
+
 == Installation ==
 
 1. Install and activate WooCommerce (8.0 or later).
