@@ -23,8 +23,8 @@ msgstr "Ripeto - Schnelle Nachbestellung für WooCommerce"
 
 #. Plugin URI of the plugin
 #: ripeto.php
-msgid "https://plogins.com/plogins-reorder/"
-msgstr "https://plogins.com/plogins-reorder/"
+msgid "https://plogins.com/ripeto/"
+msgstr "https://plogins.com/ripeto/"
 
 #. Description of the plugin
 #: ripeto.php
