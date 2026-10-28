@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ What the plugin does:
 
 Settings live under **WooCommerce > Reorder**: change the button label, pick which order statuses get the button (Completed, Processing, On hold), and decide whether reordering lands on the cart or the checkout.
 
-Source and bug reports live on GitHub at [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder); issues and patches welcome.
+Source and bug reports live on GitHub at [github.com/wppoland/ripeto](https://github.com/wppoland/ripeto); issues and patches welcome.
 
 == Ripeto Pro ==
 
@@ -50,9 +50,9 @@ Ripeto Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Ripeto Pro** - [plogins.com/plogins-reorder-pro/](https://plogins.com/plogins-reorder-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-reorder-pro/pricing/](https://plogins.com/plogins-reorder-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-reorder-pro/docs/](https://plogins.com/plogins-reorder-pro/docs/)
+* **Ripeto Pro** - [plogins.com/ripeto-pro/](https://plogins.com/ripeto-pro/)
+* **Compare editions and pricing** - [plogins.com/ripeto-pro/pricing/](https://plogins.com/ripeto-pro/pricing/)
+* **PRO documentation** - [plogins.com/ripeto-pro/docs/](https://plogins.com/ripeto-pro/docs/)
 
 == Installation ==
 
@@ -66,10 +66,10 @@ The free edition is not a trial and its features stay available without a time l
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-reorder/docs/](https://plogins.com/plogins-reorder/docs/)
-* **Plugin page**: [plogins.com/plogins-reorder/](https://plogins.com/plogins-reorder/)
-* **Source code**: [github.com/wppoland/plogins-reorder](https://github.com/wppoland/plogins-reorder)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-reorder/issues](https://github.com/wppoland/plogins-reorder/issues)
+* **Documentation**: [plogins.com/ripeto/docs/](https://plogins.com/ripeto/docs/)
+* **Plugin page**: [plogins.com/ripeto/](https://plogins.com/ripeto/)
+* **Source code**: [github.com/wppoland/ripeto](https://github.com/wppoland/ripeto)
+* **Bug reports and feature requests**: [github.com/wppoland/ripeto/issues](https://github.com/wppoland/ripeto/issues)
 
 
 = Is Ripeto free? =
@@ -112,6 +112,9 @@ Ripeto does not connect to any external services. It only re-adds items to the s
 Ripeto is fully translatable and ships the `ripeto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.4 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.3 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

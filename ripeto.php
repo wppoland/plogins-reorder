@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 /**
  * Plugin Name:       Ripeto - One-Click Reorder for WooCommerce
- * Plugin URI:        https://plogins.com/plogins-reorder/
+ * Plugin URI:        https://plogins.com/ripeto/
  * Description:        Add a one-click reorder button to past orders so customers can re-add every still-purchasable item to the cart and buy again fast.
- * Version:           1.1.3
+ * Version:           1.1.4
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Author:            WPPoland.com
@@ -27,7 +27,7 @@ namespace Reorder;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.1.3';
+const VERSION     = '1.1.4';
 const PLUGIN_FILE     = __FILE__;
 const PLUGIN_DIR      = __DIR__;
 const MIN_PHP_VERSION = '8.1.0';

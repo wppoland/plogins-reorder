@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: ripeto.php
-msgid "https://plogins.com/plogins-reorder/"
+msgid "https://plogins.com/ripeto/"
 msgstr ""
 
 #. Description of the plugin
